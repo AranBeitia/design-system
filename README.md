@@ -4,6 +4,8 @@ Design system
 # INSTALATION
 # The basics
 ```sh
+$ npm install
+
 $ npm install --save-dev gulp
 $ npm install --save-dev gulp-sass
 ```
