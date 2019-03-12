@@ -1,0 +1,29 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Design system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AranBeitia/design-system.git"
+  },
+  "author": "Arantza Beitia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AranBeitia/design-system/issues"
+  },
+  "homepage": "https://github.com/AranBeitia/design-system#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
