@@ -93,14 +93,14 @@
 
   /**/
 .header {
-  @include vendor('display', 'flex');
-  background-color: _palette(accent1);
-  cursor: default;
-  padding: 1.75em 2em;
   position: fixed;
   z-index: 1;
+  @include vendor('display', 'flex');
   width: 100%;
-
+  padding: 1.75em 2em;
+  background-color: _palette(accent1);
+  cursor: default;
+  
   &__title {
     border: 0;
     color: _palette(fg-bold);
