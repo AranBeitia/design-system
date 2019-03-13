@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$sidebar = $('#sidebar');
+    $sidebar = $('.header__nav');
 
 	// Breakpoints.
 		breakpoints({
