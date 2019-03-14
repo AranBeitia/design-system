@@ -1,10 +1,10 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'font-awesome.min.css';
+@import 'tools/libs/vars';
+@import 'tools/libs/functions';
+@import 'tools/libs/mixins';
+@import 'tools/libs/vendor';
+@import 'tools/libs/breakpoints';
+@import 'tools/libs/html-grid';
+@import 'tools/font-awesome.min.css';
 
 /*
 	Hyperspace by HTML5 UP
@@ -25,34 +25,38 @@
 
 // Base.
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/typography';
+	@import 'base/b.reset';
+	@import 'base/b.page';
+	@import 'base/b.typography';
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/box';
-	@import 'components/button';
-	@import 'components/features';
-	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/contact';
-	@import 'components/icons';
-	@import 'components/menu';
-	@import 'components/section';
-	@import 'components/split';
-	@import 'components/spotlights';
-	@import 'components/table';
-	@import 'components/wrapper';
+	@import 'components/c.row';
+	@import 'components/c.box';
+	@import 'components/c.button';
+	@import 'components/c.features';
+	@import 'components/c.form';
+	@import 'components/c.icon';
+	@import 'components/c.image';
+	@import 'components/c.list';
+	@import 'components/c.actions';
+	@import 'components/c.contact';
+	@import 'components/c.icons';
+	@import 'components/c.menu';
+	@import 'components/c.section';
+	@import 'components/c.split';
+	@import 'components/c.spotlights';
+	@import 'components/c.table';
+	@import 'components/c.wrapper';
+
+// Template.
+
+@import 'templates/t.colour-card';
 
 // Layout.
 
-	@import 'layout/header';
-	@import 'layout/wrapper';
-	@import 'layout/footer';
-	@import 'layout/sidebar';
-	@import 'layout/intro';
+	@import 'layout/l.header';
+	@import 'layout/l.wrapper';
+	@import 'layout/l.footer';
+	@import 'layout/l.sidebar';
+	@import 'layout/l.intro';

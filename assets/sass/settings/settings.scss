@@ -1,0 +1,24 @@
+// Example redefining variables of the template itself.
+$coke-font-size: 16px !default;
+$coke-line-height: 1.5 !default;
+
+$coke-gutter: 15px !default;
+
+$coke-breakpoints: (
+  'phone': 320px,
+  'phablet': 576px,
+  'tablet': 768px,
+  'desktop': 1024px
+) !default;
+
+// Example of transfer by reference, so as not to drag the prefix '$coke'
+$gutter: $coke-gutter !default;
+
+// Settings flags:
+$coke-generate-box-sizing: true !default;
+$coke-generate-normalize: true !default;
+$coke-generate-reset: true !default;
+$coke-generate-margin-rhythm: true !default;
+$coke-generate-page-setup: true !default;
+$coke-generate-flex-selectors: false !default;
+$coke-generate-font-selectors: true !default;

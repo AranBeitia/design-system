@@ -1,0 +1,57 @@
+.colour {
+	&__element {
+		width: 20%;
+		margin: 0 5px;
+		padding: 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__value {
+		height: 120px;
+		width: 100%;
+		display: table;
+
+		&--axa-siena {
+			background-color: #F07662;
+			color: #ffffff;
+		}
+
+		&--axa-siena-light {
+			background-color: #fef7f6;
+			color: #F07662;
+		}
+
+		&--axa-blue {
+			background-color: #103184;
+			color: #ffffff;
+		}
+
+		&--axa-blue-light {
+			background-color: #E7F5FF;
+			color: #103184;
+		}
+
+		&--axa-yellow {
+			background-color: #fbb730;
+			color: #ffffff;
+		}
+
+		&--axa-grey{
+			background-color: #eeeeee;
+			color: #fbb730;
+		}
+	}
+
+	&__content {
+		display: table-cell;
+		vertical-align: middle;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&__name {
+		display: block;
+		font-weight: 800;
+	}
+}
