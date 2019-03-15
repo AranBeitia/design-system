@@ -1,10 +1,16 @@
 .colour {
+  padding: 1rem 0;
+
 	&__element {
-		width: 20%;
+		min-width: 25%;
 		margin: 0 5px;
 		padding: 0;
 		display: inline-block;
 		vertical-align: top;
+
+    @include breakpoint('<=xsmall') {
+      width: 100%;
+    }
 	}
 
 	&__value {
@@ -41,6 +47,31 @@
 			background-color: #eeeeee;
 			color: #fbb730;
 		}
+
+    &--axa-activity {
+      background-color: #914146;
+      color: white;
+    }
+
+    &--axa-nutrition {
+      background-color: #027180;
+      color: white;
+    }
+
+    &--axa-health {
+      background-color: #00aec6;
+      color: white;
+    }
+
+    &--axa-lifestyle {
+      background-color: #E196AA;
+      color: white;
+    }
+
+    &--axa-mindset {
+      background-color: #ffb922;
+      color: white;
+    }
 	}
 
 	&__content {
