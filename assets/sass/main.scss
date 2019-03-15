@@ -4,7 +4,23 @@
 @import 'tools/libs/vendor';
 @import 'tools/libs/breakpoints';
 @import 'tools/libs/html-grid';
-@import 'tools/font-awesome.min.css';
+@import 'font-awesome.min.css';
+
+@import 'tools/debug/debug.console';
+@import 'tools/debug/debug.markup';
+@import 'tools/debug/debug.boxing';
+
+@import 'tools/responsive/responsive.breakpoints.scss';
+@import 'tools/responsive/responsive.include-media';
+
+@import 'tools/utils/utils.other';
+@import 'tools/utils/utils.animations';
+@import 'tools/utils/utils.linear-gradient';
+@import 'tools/utils/utils.units';
+@import 'tools/utils/utils.position';
+@import 'tools/utils/utils.flexbox';
+@import 'tools/utils/utils.shapes';
+@import 'tools/utils/utils.truncate';
 
 /*
 	Hyperspace by HTML5 UP
@@ -15,12 +31,12 @@
 // Breakpoints.
 
 	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
+		xlarge:   ( 1201px,  1680px ),
+		large:    ( 981px,   1200px ),
 		medium:   ( 737px,   980px  ),
 		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  )
+		xsmall:   ( 321px,   480px  ),
+		xxsmall:  ( null,    320px  )
 	));
 
 // Base.
@@ -52,6 +68,10 @@
 // Template.
 
 @import 'templates/t.colour-card';
+
+// Settings.
+
+@import 'settings/s.settings';
 
 // Layout.
 

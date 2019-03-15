@@ -7,7 +7,7 @@
 /* Footer */
 
 	#footer {
-		#sidebar + #wrapper + & {
+		.sidebar + .wrapper + & {
 			margin-left: _size(sidebar-width);
 
 			@include breakpoint('<=large') {
@@ -30,7 +30,7 @@
 			}
 		}
 
-		#header + #wrapper + & {
+		.header + .wrapper + & {
 			> .inner {
 				margin: 0 auto;
 			}

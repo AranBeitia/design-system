@@ -32,7 +32,7 @@
 
 /* Wrapper */
 
-	.wrapper {
+	.c-wrapper {
 		> .inner {
 			opacity: 1 !important;
 			@include vendor('transform', 'none !important');
@@ -41,7 +41,7 @@
 
 /* Sidebar */
 
-	#sidebar {
+	.sidebar {
 		> .inner {
 			opacity: 1 !important;
 		}

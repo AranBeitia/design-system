@@ -6,8 +6,8 @@
 
 /* Wrapper (main) */
 
-	#wrapper {
-		#sidebar + & {
+	.wrapper {
+		.sidebar + & {
 			margin-left: _size(sidebar-width);
 
 			@include breakpoint('<=large') {
@@ -20,9 +20,10 @@
 			}
 		}
 
-		#header + & {
+		.header + & {
 			> .wrapper {
 				> .inner {
+          margin-left: _size(sidebar-width);
 					margin: 0 auto;
 				}
 			}
