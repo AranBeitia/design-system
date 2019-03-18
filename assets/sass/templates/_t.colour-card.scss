@@ -2,7 +2,7 @@
   padding: 1rem 0;
 
 	&__element {
-		min-width: 25%;
+		min-width: 20%;
 		margin: 0 5px;
 		padding: 0;
 		display: inline-block;
@@ -105,6 +105,21 @@
 
     &--axa-silver-background {
       background-color: #cbcccd;
+      color: white;
+    }
+
+    &--axa-gold {
+      background-color: #af8b1b;
+      color: white;
+    }
+
+    &--axa-gold-font {
+      background-color: #46370b;
+      color: white;
+    }
+
+    &--axa-gold-background {
+      background-color: #af8b1b;
       color: white;
     }
 	}
