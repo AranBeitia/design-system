@@ -1,0 +1,182 @@
+.color {
+  padding: 1rem 0;
+
+	&__item {
+		min-width: 20%;
+		margin: 0 5px;
+		padding: 0;
+		display: inline-block;
+
+    @include breakpoint('<=xsmall') {
+      width: 100%;
+    }
+	}
+
+	&__content {
+		$color-name: _color(white);
+    $color-brand: red;
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'column');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
+		height: 60px;
+		width: 100%;
+	
+		&--siena {
+			background-color: _color(siena);
+			color: $color-name;
+		}
+
+		&--siena-light {
+			background-color: _color(siena-light);
+			color: _color(siena);
+		}
+
+		&--blue {
+			background-color: _color(blue);
+			color: $color-name;
+		}
+
+		&--blue-light {
+			background-color: _color(blue-light);
+			color: _color(blue);
+		}
+
+		&--yellow {
+			background-color: _color(yellow);
+			color: $color-name;
+		}
+
+		&--hol-grey{
+			background-color: _color(hol-grey);
+			color: _color(yellow);
+		}
+
+    &--axa-activity {
+      background-color: #914146;
+      color: $color-name;
+    }
+
+    &--axa-nutrition {
+      background-color: #027180;
+      color: $color-name;
+    }
+
+    &--axa-health {
+      background-color: #00aec6;
+      color: $color-name;
+    }
+
+    &--axa-lifestyle {
+      background-color: #E196AA;
+      color: $color-name;
+    }
+
+    &--axa-mindset {
+      background-color: #ffb922;
+      color: $color-name;
+    }
+
+    &--axa-beginner-font {
+      background-color: #602f27;
+      color: $color-name;
+    }
+
+    &--axa-bronze {
+      background-color: #9f916d;
+      color: $color-name;
+    }
+
+    &--axa-bronze-font {
+      background-color: #3f3a2c;
+      color: $color-name;
+    }
+
+    &--axa-bronze-background {
+      background-color: #979797;
+      color: $color-name;
+    }
+
+    &--axa-silver {
+      background-color: #cbcccd;
+      color: $color-name;
+    }
+
+    &--axa-silver-font {
+      background-color: #525252;
+      color: $color-name;
+    }
+
+    &--axa-silver-background {
+      background-color: #cbcccd;
+      color: $color-name;
+    }
+
+    &--axa-gold {
+      background-color: #af8b1b;
+      color: $color-name;
+    }
+
+    &--axa-gold-font {
+      background-color: #46370b;
+      color: $color-name;
+    }
+
+    &--axa-gold-background {
+      background-color: #af8b1b;
+      color: $color-name;
+    }
+
+    &--grey-dark {
+      background-color: _color(grey-dark);
+      color: $color-name;
+    }
+
+    &--axa-grey {
+      background-color: _color(grey);
+      color: $color-name;
+    }
+
+    &--axa-light-grey {
+      background-color: _color(grey-light);
+      color: $color-name;
+    }
+
+    &--main {
+      background-color: _color(siena);
+      color: $color-name;
+    }
+
+    &--main-disabled {
+      background-color: rgba($color-brand, .5);
+      color: $color-name;
+    }
+
+    &--second {
+      background-color: _color(white);
+      color: $color-brand;
+      border: 2px solid $color-brand;
+    }
+
+    &--second-disabled {
+      background-color: _color(white);
+      color: rgba($color-brand, .5);
+      border: 2px solid $color-brand;
+    }
+
+    &--action {
+      background-color: #8bc242;
+      color: $color-name;
+    }
+
+    &--action-disabled {
+      background-color: rgba(#8bc242, .5);
+      color: $color-name;
+    }
+	}
+
+	&__name {
+		display: block;
+		font-weight: 800;
+	}
+}

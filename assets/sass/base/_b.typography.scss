@@ -7,22 +7,22 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: _palette(fg);
+		color: color(grey);
 		font-family: _font(family);
-		font-size: 16.5pt;
+		font-size: 16px;
 		font-weight: _font(weight);
-		line-height: 1.75;
+		line-height: 1.2;
 
 		@include breakpoint('<=xlarge') {
-			font-size: 13pt;
+			font-size: 15px;
 		}
 
 		@include breakpoint('<=large') {
-			font-size: 12pt;
+			font-size: 14px;
 		}
 
 		@include breakpoint('<=xxsmall') {
-			font-size: 11pt;
+			font-size: 13px;
 		}
 	}
 
@@ -42,7 +42,7 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		color: _color(grey);
 		font-weight: _font(weight-bold);
 	}
 
@@ -55,7 +55,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: _color(grey-dark);
 		font-weight: _font(weight-bold);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 0.25) 0;
@@ -67,7 +67,7 @@
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 28px;
 
 		&.major {
 			margin: 0 0 (_size(element-margin) * 0.65) 0;
@@ -89,59 +89,59 @@
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 22px;
 	}
 
 	h3 {
-		font-size: 1.1em;
+		font-size: 18px;
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 16px;
 	}
 
 	h5 {
-		font-size: 0.8em;
+		font-size: 14px;
 	}
 
 	h6 {
-		font-size: 0.6em;
+		font-size: 12px;
 	}
 
 	@include breakpoint('<=small') {
 		h1 {
-			font-size: 2em;
+			font-size: 20px;
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 18px;
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 16px;
 		}
 
 		h4 {
-			font-size: 0.8em;
+			font-size: 14px;
 		}
 
 		h5 {
-			font-size: 0.6em;
+			font-size: 12px;
 		}
 
 		h6 {
-			font-size: 0.6em;
+			font-size: 12px;
 		}
 	}
 
 	sub {
-		font-size: 0.8em;
+		font-size: 14px;
 		position: relative;
 		top: 0.5em;
 	}
 
 	sup {
-		font-size: 0.8em;
+		font-size: 14px;
 		position: relative;
 		top: -0.5em;
 	}
@@ -154,11 +154,11 @@
 	}
 
 	code {
-		background: _palette(border-bg);
+		background: _color(grey);
 		border-radius: _size(border-radius);
 		border: solid _size(border-width) _palette(border);
 		font-family: _font(family-fixed);
-		font-size: 0.9em;
+		font-size: 16px;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
@@ -166,7 +166,7 @@
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: _font(family-fixed);
-		font-size: 0.9em;
+		font-size: 16px;
 		margin: 0 0 _size(element-margin) 0;
 
 		code {

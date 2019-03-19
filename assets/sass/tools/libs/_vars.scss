@@ -24,9 +24,9 @@
 
 // Font.
 	$font: (
-		family:				(Arial, Helvetica, sans-serif),
+		family:					('Source Sans Pro', sans-serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				normal,
+		weight:					normal,
 		weight-bold:		bold,
 		kerning-alt:		0.25em
 	);
@@ -34,9 +34,9 @@
 // Palette.
 	$palette: (
 		bg:					#312450,
-		bg-alt:			darken(#312450, 5),
-		fg:				rgba(255,255,255,0.55),
-		fg-bold:		#ffffff,
+		bg-alt:				darken(#312450, 5),
+		fg:					rgba(255,255,255,0.55),
+		fg-bold:		white,
 		fg-light:		rgba(255,255,255,0.35),
 		border:			rgba(255,255,255,0.15),
 		border-bg:	rgba(255,255,255,0.05),
@@ -46,4 +46,19 @@
 		accent2-alt:	darken(#5052b5, 10),
 		accent3:		#b74e91,
 		accent3-alt:	darken(#b74e91, 10)
+	);
+
+// Color palette
+	$color: (
+		white:				#ffffff,
+		grey-light:		#f0f0f0,
+		grey:					#606060,
+		grey-dark:		#525252,
+		black:				#000000,
+		siena:				#f07662,
+		siena-light:		rgba(#f07562, .2),
+		blue:					#103184,
+		blue-light:			rgba(#103184, .2),
+		yellow:				#fbb730,
+		hol-grey:			#eeeeee
 	);
