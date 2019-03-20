@@ -20,6 +20,12 @@ $ npm install --save-dev gulp-postcss autoprefixer cssnano gulp-sourcemaps
 $ npm install --save-dev browser-sync
 ```
 
+# Install sassdoc
+```sh
+$ npm install sassdoc -g
+```
+URL - http://sassdoc.com/getting-started/ 
+
 # GO
 ```sh
 $ gulp watch

@@ -10,12 +10,12 @@
 		position: relative;
 
 		> .inner {
-			@include padding(5em, 5em);
-			max-width: 100%;
-			width: _size(inner-width);
+			@include padding(5em, 3em);
+			max-width: _size(full-width);
+			width: _size(full-width);
 
 			@include breakpoint('<=xlarge') {
-				@include padding(4em, 4em);
+				@include padding(4em, 3em);
 			}
 
 			@include breakpoint('<=large') {

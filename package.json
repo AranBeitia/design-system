@@ -16,7 +16,9 @@
     "url": "https://github.com/AranBeitia/design-system/issues"
   },
   "homepage": "https://github.com/AranBeitia/design-system#readme",
-  "dependencies": {},
+  "dependencies": {
+    "sassdoc": "^2.5.1"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.10",
     "browser-sync": "^2.26.3",

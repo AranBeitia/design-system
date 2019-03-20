@@ -2,7 +2,7 @@
   padding: 1rem 0;
 
 	&__item {
-		min-width: 20%;
+		min-width: 24%;
 		margin: 0 5px;
 		padding: 0;
 		display: inline-block;
@@ -22,154 +22,163 @@
 		height: 60px;
 		width: 100%;
 	
-		&--siena {
+		&#{&}--siena {
 			background-color: _color(siena);
 			color: $color-name;
 		}
 
-		&--siena-light {
+		&#{&}--siena-light {
 			background-color: _color(siena-light);
 			color: _color(siena);
 		}
 
-		&--blue {
+		&#{&}--blue {
 			background-color: _color(blue);
 			color: $color-name;
 		}
 
-		&--blue-light {
+		&#{&}--blue-light {
 			background-color: _color(blue-light);
 			color: _color(blue);
 		}
 
-		&--yellow {
+		&#{&}--yellow {
 			background-color: _color(yellow);
 			color: $color-name;
 		}
 
-		&--hol-grey{
+		&#{&}--hol-grey{
 			background-color: _color(hol-grey);
 			color: _color(yellow);
 		}
 
-    &--axa-activity {
-      background-color: #914146;
+    &#{&}--activity {
+      background-color: _color(brown);
       color: $color-name;
     }
 
-    &--axa-nutrition {
-      background-color: #027180;
+    &#{&}--nutrition {
+      background-color: _color(emerald-dark);
       color: $color-name;
     }
 
-    &--axa-health {
-      background-color: #00aec6;
+    &#{&}--health {
+      background-color: _color(emerald);
       color: $color-name;
     }
 
-    &--axa-lifestyle {
-      background-color: #E196AA;
+    &#{&}--lifestyle {
+      background-color: _color(pink);
       color: $color-name;
     }
 
-    &--axa-mindset {
-      background-color: #ffb922;
+    &#{&}--mindset {
+      background-color: _color(yellow-dark);
       color: $color-name;
     }
 
-    &--axa-beginner-font {
-      background-color: #602f27;
+		&#{&}--beginner {
+      background-color: _color(siena);
+      color: $color-name;
+    } 
+    &#{&}--beginner-font {
+      background-color: _color(brown-dark);
       color: $color-name;
     }
 
-    &--axa-bronze {
-      background-color: #9f916d;
+		&#{&}--beginner-bg {
+      background-color: _color(siena-light);
+      color: _color(brown-dark);
+    }
+
+    &#{&}--bronze {
+      background-color: _color(bronze);
       color: $color-name;
     }
 
-    &--axa-bronze-font {
-      background-color: #3f3a2c;
+    &#{&}--bronze-font {
+      background-color: _color(bronze-dark);
       color: $color-name;
     }
 
-    &--axa-bronze-background {
-      background-color: #979797;
+    &#{&}--bronze-bg {
+      background-color: _color(bronze-light);
       color: $color-name;
     }
 
-    &--axa-silver {
-      background-color: #cbcccd;
+    &#{&}--silver {
+      background-color: _color(silver);
       color: $color-name;
     }
 
-    &--axa-silver-font {
-      background-color: #525252;
+    &#{&}--silver-font {
+      background-color: _color(silver-dark);
       color: $color-name;
     }
 
-    &--axa-silver-background {
-      background-color: #cbcccd;
+    &#{&}--silver-bg {
+      background-color: _color(silver-light);
+      color: _color(silver-dark);
+    }
+
+    &#{&}--gold {
+      background-color: _color(gold);
       color: $color-name;
     }
 
-    &--axa-gold {
-      background-color: #af8b1b;
+    &#{&}--gold-font {
+      background-color: _color(gold-dark);
       color: $color-name;
     }
 
-    &--axa-gold-font {
-      background-color: #46370b;
+    &#{&}--gold-bg {
+      background-color: _color(gold-light);
       color: $color-name;
     }
 
-    &--axa-gold-background {
-      background-color: #af8b1b;
-      color: $color-name;
-    }
-
-    &--grey-dark {
+    &#{&}--grey-dark {
       background-color: _color(grey-dark);
       color: $color-name;
     }
 
-    &--axa-grey {
+    &#{&}--grey {
       background-color: _color(grey);
       color: $color-name;
     }
 
-    &--axa-light-grey {
+    &#{&}--grey-light {
       background-color: _color(grey-light);
-      color: $color-name;
+      color: _color(grey);
     }
 
-    &--main {
+    &#{&}--main {
       background-color: _color(siena);
       color: $color-name;
     }
 
-    &--main-disabled {
+    &#{&}--main-disabled {
       background-color: rgba($color-brand, .5);
       color: $color-name;
     }
 
-    &--second {
+    &#{&}--second {
       background-color: _color(white);
       color: $color-brand;
       border: 2px solid $color-brand;
     }
 
-    &--second-disabled {
+    &#{&}--second-disabled {
       background-color: _color(white);
       color: rgba($color-brand, .5);
       border: 2px solid $color-brand;
     }
 
-    &--action {
+    &#{&}--action {
       background-color: #8bc242;
       color: $color-name;
     }
 
-    &--action-disabled {
+    &#{&}--action-disabled {
       background-color: rgba(#8bc242, .5);
       color: $color-name;
     }
