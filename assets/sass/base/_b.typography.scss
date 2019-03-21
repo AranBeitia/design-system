@@ -9,7 +9,7 @@
 	body, input, select, textarea {
 		color: _color(grey);
 		font-family: _font(family);
-		font-size: 16px;
+		font-size: _f-size(normal);
 		font-weight: _font(weight);
 		line-height: 1.2;
 
@@ -22,7 +22,7 @@
 		}
 
 		@include breakpoint('<=xxsmall') {
-			font-size: 13px;
+			font-size: _f-size(tiny);
 		}
 	}
 
@@ -67,7 +67,7 @@
 	}
 
 	h1 {
-		font-size: 28px;
+		font-size: _f-size(huge);
 
 		&.major {
 			margin: 0 0 (_size(element-margin) * 0.65) 0;
@@ -89,15 +89,15 @@
 	}
 
 	h2 {
-		font-size: 22px;
+		font-size: _f-size(bigger);
 	}
 
 	h3 {
-		font-size: 18px;
+		font-size: _f-size(big);
 	}
 
 	h4 {
-		font-size: 16px;
+		font-size: _f-size(normal);
 	}
 
 	h5 {
@@ -105,7 +105,7 @@
 	}
 
 	h6 {
-		font-size: 12px;
+		font-size: _f-size(tiny);
 	}
 
 	@include breakpoint('<=small') {
@@ -118,7 +118,7 @@
 		}
 
 		h3 {
-			font-size: 16px;
+			font-size: _f-size(normal);
 		}
 
 		h4 {
@@ -126,7 +126,7 @@
 		}
 
 		h5 {
-			font-size: 12px;
+			font-size: _f-size(tiny);
 		}
 
 		h6 {
@@ -158,7 +158,7 @@
 		border-radius: _size(border-radius);
 		border: solid _size(border-width) _palette(border);
 		font-family: _font(family-fixed);
-		font-size: 16px;
+		font-size: _f-size(normal);
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
@@ -166,7 +166,7 @@
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: _font(family-fixed);
-		font-size: 16px;
+		font-size: _f-size(normal);
 		margin: 0 0 _size(element-margin) 0;
 
 		code {

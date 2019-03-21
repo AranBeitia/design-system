@@ -1,9 +1,14 @@
 .color {
+  $margin-size: 5px;
   padding: 1rem 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
 
 	&__item {
 		min-width: 24%;
-		margin: 0 5px;
+		margin: $margin-size;
 		padding: 0;
 		display: inline-block;
 
@@ -13,179 +18,157 @@
 	}
 
 	&__content {
-		$color-name: _color(white);
     $color-brand: red;
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'center');
-		height: 60px;
-		width: 100%;
+		min-height: 80px;
+		min-width: 170px;
 	
 		&#{&}--siena {
 			background-color: _color(siena);
-			color: $color-name;
 		}
 
 		&#{&}--siena-light {
 			background-color: _color(siena-light);
-			color: _color(siena);
 		}
 
 		&#{&}--blue {
 			background-color: _color(blue);
-			color: $color-name;
 		}
 
 		&#{&}--blue-light {
 			background-color: _color(blue-light);
-			color: _color(blue);
 		}
 
 		&#{&}--yellow {
 			background-color: _color(yellow);
-			color: $color-name;
 		}
 
 		&#{&}--hol-grey{
 			background-color: _color(hol-grey);
-			color: _color(yellow);
 		}
 
     &#{&}--activity {
       background-color: _color(brown);
-      color: $color-name;
     }
 
     &#{&}--nutrition {
       background-color: _color(emerald-dark);
-      color: $color-name;
     }
 
     &#{&}--health {
       background-color: _color(emerald);
-      color: $color-name;
     }
 
     &#{&}--lifestyle {
       background-color: _color(pink);
-      color: $color-name;
     }
 
     &#{&}--mindset {
       background-color: _color(yellow-dark);
-      color: $color-name;
     }
 
 		&#{&}--beginner {
       background-color: _color(siena);
-      color: $color-name;
     } 
     &#{&}--beginner-font {
       background-color: _color(brown-dark);
-      color: $color-name;
     }
 
 		&#{&}--beginner-bg {
       background-color: _color(siena-light);
-      color: _color(brown-dark);
     }
 
     &#{&}--bronze {
       background-color: _color(bronze);
-      color: $color-name;
     }
 
     &#{&}--bronze-font {
       background-color: _color(bronze-dark);
-      color: $color-name;
     }
 
     &#{&}--bronze-bg {
       background-color: _color(bronze-light);
-      color: $color-name;
     }
 
     &#{&}--silver {
       background-color: _color(silver);
-      color: $color-name;
     }
 
     &#{&}--silver-font {
       background-color: _color(silver-dark);
-      color: $color-name;
     }
 
     &#{&}--silver-bg {
       background-color: _color(silver-light);
-      color: _color(silver-dark);
     }
 
     &#{&}--gold {
       background-color: _color(gold);
-      color: $color-name;
     }
 
     &#{&}--gold-font {
       background-color: _color(gold-dark);
-      color: $color-name;
     }
 
     &#{&}--gold-bg {
       background-color: _color(gold-light);
-      color: $color-name;
     }
 
     &#{&}--grey-dark {
       background-color: _color(grey-dark);
-      color: $color-name;
     }
 
     &#{&}--grey {
       background-color: _color(grey);
-      color: $color-name;
     }
 
     &#{&}--grey-light {
       background-color: _color(grey-light);
-      color: _color(grey);
     }
 
     &#{&}--main {
       background-color: _color(siena);
-      color: $color-name;
     }
 
     &#{&}--main-disabled {
       background-color: rgba($color-brand, .5);
-      color: $color-name;
     }
 
     &#{&}--second {
       background-color: _color(white);
-      color: $color-brand;
       border: 2px solid $color-brand;
     }
 
     &#{&}--second-disabled {
       background-color: _color(white);
-      color: rgba($color-brand, .5);
       border: 2px solid $color-brand;
     }
 
     &#{&}--action {
       background-color: #8bc242;
-      color: $color-name;
     }
 
     &#{&}--action-disabled {
       background-color: rgba(#8bc242, .5);
-      color: $color-name;
     }
 	}
 
-	&__name {
-		display: block;
-		font-weight: 800;
-	}
+	&__description {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    margin: $margin-size 0;
+  }
+  
+  &__name {
+    @include vendor('text-transform', 'uppercase');
+    font-weight: _font(weight-bold);
+  }
+
+  &__code {
+    font-size: _f-size(big);
+    line-height: 1.5;
+  }
 }

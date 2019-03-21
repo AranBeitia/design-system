@@ -68,6 +68,13 @@
 	@return val($font, $keys...);
 }
 
+/// Gets a font size value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _f-size($keys...) {
+	@return val($f-size, $keys...);
+}
+
 /// Gets a misc value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
