@@ -8,12 +8,10 @@
   background-color: _palette(accent1);
   cursor: default;
 
-	&__logo {
-		border: 0;
-		color: _palette(fg-bold);
-		display: block;
-		font-size: 1.25em;
-		font-weight: _font(weight-bold);
+	&__brand {
+    display: flex;
+    justify-content: flex-start;
+		font-size: 28px;
 	}
 
 	&__nav {
@@ -25,6 +23,10 @@
 			padding: 0;
 		}
 	}
+}
+
+.h-logo {
+  width: 50px;
 }
 
 .h-nav {

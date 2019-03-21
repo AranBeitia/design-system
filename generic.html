@@ -13,20 +13,25 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+    <header class="header">
+      <div class="header__brand">
+        <a href="index.html">
+          <img class="h-logo" src="img/axa-logo.png" alt="AXA brand logo" title="Go to home">
+          <span>AXA GWAPA logo</span>
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li class="h-nav__item"><a href="index.html" class="h-nav__link active">Home</a></li>
+          <li class="h-nav__item"><a href="generic.html" class="h-nav__link">Generic</a></li>
+          <li class="h-nav__item"><a href="elements.html" class="h-nav__link">Elements</a></li>
+        </ul>
+      </nav>
+    </header>
 		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="title">Hyperspace</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html" class="active">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
-		</header>
+
 		<!-- Sidebar -->
-		<section id="sidebar">
+		<section class="sidebar">
 			<div class="inner">
 				<nav>
 					<div class="nav__group">
@@ -60,9 +65,9 @@
 			</div>
 		</section>
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div class="wrapper">
 				<!-- Main -->
-				<main id="main" class="wrapper">
+				<main class="main" class="c-wrapper">
 					<div class="inner">
 						<h1 class="major">A Generic Page</h1>
 						<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
@@ -73,7 +78,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+			<footer class="footer" class="c-wrapper alt">
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
