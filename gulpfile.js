@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 		autoprefixer = require("autoprefixer"),
 		cssnano = require("cssnano"),
 		sourcemaps = require("gulp-sourcemaps"),
-		browserSync = require("browser-sync").create();
+		browserSync = require("browser-sync").create(),
+		sassdoc = require("sassdoc");
 
 // Put this after including our dependencies
 var paths = {
@@ -33,7 +34,8 @@ function style() {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.styles.dest))
 		// Add browsersync stream pipe after compilation
-		.pipe(browserSync.stream());
+		.pipe(browserSync.stream())
+		.pipe(sassdoc());
 }
 exports.style = style;
 
