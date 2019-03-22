@@ -6,8 +6,21 @@
     padding-top: 0;
   }
 
+  &__group {
+    display: flex;
+  }
+
+  &__family {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    padding-left: 0;
+    margin: 0;
+  }
+
 	&__item {
-		min-width: 24%;
+		min-width: calc(20% - 20px);
 		margin: $margin-size;
 		padding: 0;
 		display: inline-block;
@@ -98,11 +111,11 @@
     }
 
     &#{&}--silver-font {
-      background-color: _color(silver-dark);
+      background-color: _color(grey-dark);
     }
 
     &#{&}--silver-bg {
-      background-color: _color(silver-light);
+      background-color: _color(grey-light);
     }
 
     &#{&}--gold {
@@ -130,29 +143,29 @@
     }
 
     &#{&}--main {
-      background-color: _color(siena);
+      background-color: _color(blue);
     }
 
     &#{&}--main-disabled {
-      background-color: rgba($color-brand, .5);
+      background-color: _color(blue-light);
     }
 
     &#{&}--second {
       background-color: _color(white);
-      border: 2px solid $color-brand;
+      border: 5px solid _color(blue);
     }
 
     &#{&}--second-disabled {
       background-color: _color(white);
-      border: 2px solid $color-brand;
+      border: 5px solid _color(blue-light);
     }
 
     &#{&}--action {
-      background-color: #8bc242;
+      background-color: _color(green);
     }
 
     &#{&}--action-disabled {
-      background-color: rgba(#8bc242, .5);
+      background-color: rgba(_color(green), 0.2);
     }
 	}
 
@@ -160,15 +173,22 @@
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');
     margin: $margin-size 0;
+
+    @include breakpoint('<=small') {
+      @include vendor('flex-direction', 'row');
+      @include vendor('justify-content', 'space-between');
+      @include vendor('align-items', 'baseline');
+    }
   }
   
   &__name {
     @include vendor('text-transform', 'uppercase');
     font-weight: _font(weight-bold);
+    color: _color(white);
   }
 
   &__code {
-    font-size: _f-size(big);
+    font-size: _f-size(bigger);
     line-height: 1.5;
   }
 }
