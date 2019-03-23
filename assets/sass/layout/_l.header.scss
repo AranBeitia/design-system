@@ -9,12 +9,12 @@
   width: 100%;
   background-color: _color(white);
   cursor: default;
-	padding: 10px;
+	padding: 5px;
 
 	&__brand {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'flex-start');
-		font-size: 28px;
+		font-size: _f-size(huge);
 		line-height: 0;
 	}
 
@@ -48,7 +48,7 @@
 		border: 0;
 		color: _color(grey);
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: _f-size(tiny);
 		font-weight: _font(weight-bold);
 		letter-spacing: _font(kerning-alt);
 		text-transform: uppercase;
