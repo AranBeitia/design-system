@@ -43,7 +43,7 @@ function reload() {
 	browserSync.reload();
 }
 
-function watch() {
+function go() {
 	browserSync.init({
 		server: {
 			baseDir: "./"
@@ -53,4 +53,4 @@ function watch() {
 	gulp.watch("index.html", reload);
 }
 // Don't forget to expose the task!
-exports.watch = watch;
+exports.go = go;

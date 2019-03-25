@@ -31,7 +31,11 @@
 			'color #{_duration(transition)} ease',
 			'border-bottom-color #{_duration(transition)} ease'
 		));
+<<<<<<< HEAD
 		border-bottom: dotted 1px _color(grey);
+=======
+		border-bottom: dotted 1px _color(grey-light);
+>>>>>>> 16224f361292b256bb8fdb6324fc0b30e2644ba8
 		color: inherit;
 		text-decoration: none;
 
