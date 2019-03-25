@@ -27,6 +27,10 @@
 			}
 		}
 
+		&.bg-color--blue {
+			background-color: _color(blue-light);
+		}
+		/**/
 		&.alt {
 			background-color: _palette(bg-alt);
 		}
@@ -54,7 +58,7 @@
 		&.style3-alt {
 			background-color: _palette(accent3-alt);
 		}
-
+/**/
 		&.fullscreen {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'column');
