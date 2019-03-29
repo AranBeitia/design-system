@@ -3,18 +3,18 @@
 .header {
   position: fixed;
   z-index: _misc(z-index-base);
-  @include vendor('display', 'flex');
-	@include vendor('justify-content', 'flex-start');
-	@include vendor('align-items', 'center');
 	height: _size(header-height);
   width: 100%;
   background-color: _color(white);
   cursor: default;
 	padding: 10px;
 
+  @include breakpoint ('<=large'){
+    @include vendor('display', 'flex');
+    @include vendor('align-items', 'center');
+  }
+
 	&__brand {
-		@include vendor('display', 'flex');
-		@include vendor('justify-content', 'flex-start');
 		font-size: _f-size(huge);
 		line-height: 0;
 	}
@@ -33,6 +33,7 @@
   width: 50px;
 }
 
+//secondary menu
 .h-nav {
 	&__item {
 		display: inline-block;

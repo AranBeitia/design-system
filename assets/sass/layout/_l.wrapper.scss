@@ -10,7 +10,7 @@
 		.sidebar + & {
 			margin-left: _size(sidebar-width);
       
-			@include breakpoint('<=large') {
+			@include breakpoint('<=medium') {
 				margin-left: 0;
 				padding-top: _size(sidebar-height);
 			}

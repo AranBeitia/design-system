@@ -1,0 +1,71 @@
+/* Toggle Button */
+
+.header__menu-btn {
+  display: none;
+}
+
+@include breakpoint ('<=medium'){
+  .header__menu-btn {
+    display: block;
+    padding: 1rem 1rem 1rem 0;
+  }
+}
+
+//mobile menu
+.h-menu {
+	&__checkbox {
+		//display: none;
+	}
+
+	&__bars {
+		background: _color(blue);
+		display: block;
+		border-radius: 4px;
+		height: 2px;
+		width: 100%;
+		transition: all 0.35s ease;
+	}
+}
+
+input[type=checkbox]:checked+label.h-menu__toggle:before {
+	display: none;
+}
+
+input[type=checkbox]+label.h-menu__toggle {
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	height: 26px;
+	width: 30px;
+}
+
+/**/
+/* Checked stated */
+
+input[type=checkbox] .h-menu__checkbox:checked~.sidebar {
+  background: _color(siena);
+	outline: 1px solid red;
+}
+.header .header__menu-btn .h-menu__checkbox:checked~.sidebar {
+    outline: 1px solid red;
+    background: _color(siena);
+}
+/**/
+
+.h-menu__checkbox:checked + label .h-menu__bars:nth-child(1) {
+	transform: translateY(-2px) rotate(-45deg);
+}
+
+.h-menu__checkbox:checked  + label .h-menu__bars:nth-child(2) {
+	transform: translateX(17px) scaleX(1.85);
+}
+
+.h-menu__checkbox:checked  + label .h-menu__bars:nth-child(3) {
+	transform: translateY(2px) rotate(45deg);
+}
+
+/**/
+
