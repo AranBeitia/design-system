@@ -181,8 +181,8 @@
     .click(function(){
     $('.sidebar').addClass('s-full');
 
-      // if ($('sidebar').hasClass('s-ful')) {
-      //   $(this).removeClass('s-ful');
+      // if ($('sidebar').hasClass('s-full')) {
+      //   $(this).removeClass('s-full');
       // }
 
 	});

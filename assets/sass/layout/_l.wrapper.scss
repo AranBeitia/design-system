@@ -28,6 +28,10 @@
 				}
 			}
 		}*/
+
+    .s-full + & {
+      margin-left: _size(sidebar-width);
+    }
 	}
 
   /*

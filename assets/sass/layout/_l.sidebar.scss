@@ -24,9 +24,9 @@
     display: none;
   }
 
-      &.s-full {
-      display: block;
-    }
+  &.s-full {
+    display: block;
+  }
 
   .inner {
     @include vendor('display', 'flex');
