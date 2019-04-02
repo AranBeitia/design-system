@@ -179,7 +179,7 @@
   // Toggle.
 	$('.header__menu-btn')
     .click(function(){
-    $('.sidebar').addClass('s-full');
+    $('.s').fadeToggle();
 
       // if ($('sidebar').hasClass('s-full')) {
       //   $(this).removeClass('s-full');
