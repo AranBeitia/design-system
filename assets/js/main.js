@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-    $sidebar = $('.sidebar');
+		$sidebar = $('.sidebar');
 
 	// Breakpoints.
 		breakpoints({
@@ -167,24 +167,19 @@
 				top: '-20vh',
 				bottom: '-20vh',
 				initialize: function() {
-        // Deactivate section.
-          $(this).addClass('inactive');
+				// Deactivate section.
+					$(this).addClass('inactive');
 				},
 				enter: function() {
-        // Activate section.
-          $(this).removeClass('inactive');
+				// Activate section.
+					$(this).removeClass('inactive');
 				}
 			});
 
-  // Toggle.
-	$('.header__menu-btn')
-    .click(function(){
-    $('.sidebar').addClass('s-full');
-
-      // if ($('sidebar').hasClass('s-full')) {
-      //   $(this).removeClass('s-full');
-      // }
-
+	// Toggle.
+	$('.header__menu-btn').on('click', function() {
+    $('.sidebar').toggleClass('s-full');
+    return(false);
 	});
 
 })(jQuery);
