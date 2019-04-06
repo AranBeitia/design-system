@@ -178,7 +178,8 @@
 
 	// Toggle.
 	$('.header__menu-btn').on('click', function() {
-    $('.sidebar').toggleClass('s-full');
+		$('.sidebar').toggleClass('s-full');
+		$(this).toggleClass('open-bar');
     return(false);
 	});
 
