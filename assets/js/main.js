@@ -179,6 +179,7 @@
 	// Toggle.
 	$('.header__menu-btn').on('click', function() {
 		$('.sidebar').toggleClass('s-full');
+		$('.wrapper').toggleClass('w-push');
 		$(this).toggleClass('open-bar');
     return(false);
 	});

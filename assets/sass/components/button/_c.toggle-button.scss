@@ -7,9 +7,9 @@
 @include breakpoint ('<=medium'){
   .header__menu-btn {
     display: block;
-		padding-right: 1rem;
-		width: 50px;
-		height: 40px;
+		margin-right: 1rem;
+		width: 24px;
+		height: 16px;
 		position: relative;
 		transform: rotate(0deg);
 		transition: .5s ease-in-out;
@@ -17,7 +17,7 @@
 
 		&.open-bar {
 			span.h-menu__bars:nth-child(1) {
-				top: 12px;
+				top: 8px;
   			transform: rotate(135deg);
 			}
 
@@ -27,7 +27,7 @@
 			}
 
 			span.h-menu__bars:nth-child(3) {
-				top: 12px;
+				top: 8px;
   			transform: rotate(-135deg);
 			}
 		}
@@ -56,9 +56,9 @@
 }
 
 .h-menu__bars:nth-child(2) {
-	top: 12px;
+	top: 8px;
 }
 
 .h-menu__bars:nth-child(3) {
-	top: 24px;
+	top: 16px;
 }

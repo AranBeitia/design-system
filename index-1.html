@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Design system</title>
@@ -15,6 +10,11 @@
 	<body class="is-preload">
 		<!-- Header -->
 		<header class="header">
+			<div class="header__menu-btn" onclick="openNav()">
+				<span class="h-menu__bars"></span>
+				<span class="h-menu__bars"></span>
+				<span class="h-menu__bars"></span>
+			</div>
 			<div class="header__brand">
 				<a href="index.html">
 					<img class="h-logo" src="img/axa-logo.png" alt="AXA brand logo" title="Go to home">
@@ -28,7 +28,7 @@
 				<nav class="sidebar__nav">
 					<div class="nav__group">
 						<ul>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Intro</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link active" href="#intro">Intro</a></li>
 						</ul>
 					</div>
 					<div class="nav__group">
@@ -36,9 +36,8 @@
 							<span>Documentation</span>
 						</header>
 						<ul>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#one">Getting started</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#two">What we do</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#three">Get in touch</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="#requirements">Requirements</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="#structure">Structure</a></li>
 						</ul>
 					</div>
 					<div class="nav__group">
@@ -48,185 +47,116 @@
 						<ul>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Buttons</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="colours.html">Colours</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#two">Icons</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#three">Typography</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#three">Forms</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Icons</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Typography</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Forms</a></li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</section>
-
 		<!-- Wrapper -->
 		<main class="wrapper">
-		<!-- Intro -->
-			<section id="intro" class="c-wrapper style1 fullscreen fade-up">
-				<div class="inner">
-					<h1>Intro</h1>
-					<p>This pattern library represents a standard set of web components / patterns that has been designed and built through
-					user testing, accessibility testing and meeting the AXA GWAPA frontend coding guidelines. It is not
-					exhaustive and should not be viewed as being exhaustive; it's a living, breathing, pull-request loving, store of how we,
-					as an organisation aim to build and craft our web experiences.</p>
-					<p>If you find a bug or have an improvement, please do fork this project on <a href="https://github.com/AranBeitia/design-system" target="_blank">github.</a></p>
-					<p>Thank you</p>
-					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Learn more</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="c-wrapper style2 spotlights">
-				<section>
-					<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-					<div class="content">
+				<!-- Intro -->
+					<section id="intro" class="c-wrapper bg-color--blue fullscreen fade-up">
 						<div class="inner">
-							<h2>Sed ipsum dolor</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+							<h1>Intro</h1>
+							<p>This pattern library represents a standard set of web components / patterns that has been designed and built through
+							user testing, accessibility testing and meeting the AXA GWAPA frontend coding guidelines. It is not
+							exhaustive and should not be viewed as being exhaustive; it's a living, breathing, pull-request loving, store of how we,
+							as an organisation aim to build and craft our web experiences.</p>
+							<p>If you find a bug or have an improvement, please do fork this project on <a href="https://github.com/AranBeitia/design-system" target="_blank">github.</a></p>
+							<p>Thank you</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
-					</div>
-				</section>
-				<section>
-					<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Feugiat consequat</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<section>
-					<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Ultricies aliquam</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="c-wrapper style3 fade-up">
-				<div class="inner">
-					<h2>What we do</h2>
-					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-					<div class="features">
+					</section>
+		
+				<!-- Requirements -->
+					<section id="requirements" class="c-wrapper style2 spotlights">
 						<section>
-							<span class="icon major fa-code"></span>
-							<h3>Lorem ipsum amet</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-						<section>
-							<span class="icon major fa-lock"></span>
-							<h3>Aliquam sed nullam</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-						<section>
-							<span class="icon major fa-cog"></span>
-							<h3>Sed erat ullam corper</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-						<section>
-							<span class="icon major fa-desktop"></span>
-							<h3>Veroeros quis lorem</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-						<section>
-							<span class="icon major fa-chain"></span>
-							<h3>Urna quis bibendum</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-						<section>
-							<span class="icon major fa-diamond"></span>
-							<h3>Aliquam urna dapibus</h3>
-							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-						</section>
-					</div>
-					<ul class="actions">
-						<li><a href="generic.html" class="button">Learn more</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="c-wrapper style1 fade-up">
-				<div class="inner">
-					<h2>Get in touch</h2>
-					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-					<div class="split style1">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="5"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><a href="" class="button submit">Send Message</a></li>
-								</ul>
-							</form>
-						</section>
-						<section>
-							<ul class="contact">
-								<li>
-									<h3>Address</h3>
-									<span>12345 Somewhere Road #654<br />
-									Nashville, TN 00000-0000<br />
-									USA</span>
-								</li>
-								<li>
-									<h3>Email</h3>
-									<a href="#">user@untitled.tld</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<span>(000) 000-0000</span>
-								</li>
-								<li>
-									<h3>Social</h3>
-									<ul class="icons">
-										<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Requirements</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
-								</li>
-							</ul>
+								</div>
+							</div>
 						</section>
-					</div>
-				</div>
-			</section>
-
-		</main>
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ultricies aliquam</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+		
+				<!-- Structure -->
+					<section id="structure" class="c-wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Project structure</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="features">
+								<section>
+									<span class="icon major fa-code"></span>
+									<h3>Lorem ipsum amet</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-lock"></span>
+									<h3>Aliquam sed nullam</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-cog"></span>
+									<h3>Sed erat ullam corper</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-desktop"></span>
+									<h3>Veroeros quis lorem</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-chain"></span>
+									<h3>Urna quis bibendum</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-diamond"></span>
+									<h3>Aliquam urna dapibus</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+		
+				</main>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -236,6 +166,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

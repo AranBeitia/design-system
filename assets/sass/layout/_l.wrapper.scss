@@ -5,7 +5,10 @@
 ///
 
 /* Wrapper (main) */
-
+.w-push {
+  margin-left: _size(sidebar-width);
+  transition: margin-left .5s;
+}
 	// .wrapper {
 	// 	.sidebar + & {
 	// 		margin-left: _size(sidebar-width);

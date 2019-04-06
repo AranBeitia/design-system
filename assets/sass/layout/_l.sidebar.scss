@@ -7,7 +7,6 @@
 /* Sidebar */
 
 .sidebar {
-  @include padding(2.5em, 2.5em);
   background: _color(blue);
   cursor: default;
   height: calc(100vh-#{_size(header-height)});
@@ -17,15 +16,17 @@
   position: fixed;
   text-align: right;
   top: _size(header-height);
-  width: _size(sidebar-width);
+  width: 0;
   z-index: _misc(z-index-base);
+  transition: width 0.5s;
 
   @include breakpoint('<=medium') {
-    display: none;
+    width: 0;
   }
 
   &.s-full {
-    display: block;
+    width: _size(sidebar-width);
+    transition: width 0.5s;
   }
 
   .inner {
@@ -140,8 +141,4 @@
       }
     }
   }
-}
-
-.flex-container {
-  
 }
