@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Design system</title>
@@ -10,153 +15,76 @@
 	<body class="is-preload">
 		<!-- Header -->
 		<header class="header">
-			<div class="header__menu-btn" onclick="openNav()">
-				<span class="h-menu__bars"></span>
-				<span class="h-menu__bars"></span>
-				<span class="h-menu__bars"></span>
+			<div class="btn-burguer">
+				<span class="btn-burguer__bar"></span>
+				<span class="btn-burguer__bar"></span>
+				<span class="btn-burguer__bar"></span>
 			</div>
-			<div class="header__brand">
+			<div class="header-brand">
 				<a href="index.html">
-					<img class="h-logo" src="img/axa-logo.png" alt="AXA brand logo" title="Go to home">
+					<img class="header-brand__logo" src="img/axa-logo.png" alt="AXA brand logo" title="Go to home">
 					<span>Design System</span>
 				</a>
 			</div>
 		</header>
-		<!-- Sidebar -->
-		<section class="sidebar">
+
+		<nav class="sidebar">
 			<div class="inner">
-				<nav class="sidebar__nav">
-					<div class="nav__group">
+				<ul class="sidebar__nav accordion-menu animated">
+					<li class="nav__group">
+						<input type="checkbox" name ="start" id="start">
+						<label for="start">Getting start</label>
 						<ul>
-							<li class="sb-nav__item"><a class="sb-nav__link active" href="#intro">Intro</a></li>
-						</ul>
-					</div>
-					<div class="nav__group">
-						<header>
-							<span>Documentation</span>
-						</header>
-						<ul>
+							<li class="sb-nav__item"><a class="sb-nav__link active" href="#intro">About</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="#requirements">Requirements</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="#structure">Structure</a></li>
 						</ul>
-					</div>
-					<div class="nav__group">
-						<header>
-							<span>Design elements</span>
-						</header>
+					</li>
+					<li class="nav__group">
+						<input type="checkbox" name ="guidelines" id="guidelines">
+						<label for="guidelines">Guidelines</label>
 						<ul>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Buttons</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Layout</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="colours.html">Colours</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Icons</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Typography</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Forms</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Themes</a></li>
 						</ul>
-					</div>
-				</nav>
+					</li>
+					<li class="nav__group">
+						<input type="checkbox" name ="components" id="components">
+						<label for="components">Components</label>
+						<ul>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Buttons</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Form</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Accordion</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Dropdown</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Switcher</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Loading</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Modal</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Notification</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Card tile</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Progress indicator</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Link</a></li>
+						</ul>
+					</li>
+				</ul>
+
 			</div>
-		</section>
+		</nav>
+
 		<!-- Wrapper -->
 		<main class="wrapper">
-				<!-- Intro -->
-					<section id="intro" class="c-wrapper bg-color--blue fullscreen fade-up">
-						<div class="inner">
-							<h1>Intro</h1>
-							<p>This pattern library represents a standard set of web components / patterns that has been designed and built through
-							user testing, accessibility testing and meeting the AXA GWAPA frontend coding guidelines. It is not
-							exhaustive and should not be viewed as being exhaustive; it's a living, breathing, pull-request loving, store of how we,
-							as an organisation aim to build and craft our web experiences.</p>
-							<p>If you find a bug or have an improvement, please do fork this project on <a href="https://github.com/AranBeitia/design-system" target="_blank">github.</a></p>
-							<p>Thank you</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-		
-				<!-- Requirements -->
-					<section id="requirements" class="c-wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Requirements</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-		
-				<!-- Structure -->
-					<section id="structure" class="c-wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Project structure</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-		
-				</main>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer c-wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
