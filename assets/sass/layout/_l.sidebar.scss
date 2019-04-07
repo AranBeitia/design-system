@@ -1,24 +1,29 @@
-///
-/// Hyperspace by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Sidebar */
-
 .sidebar {
-  @include padding(2.5em, 2.5em);
   background: _color(blue);
   cursor: default;
-  height: 100vh;
+  height: calc(100vh-#{_size(header-height)});
   left: 0;
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
   text-align: right;
-  top: 0;
+  top: _size(header-height);
   width: _size(sidebar-width);
   z-index: _misc(z-index-base);
+  transition: width 0.5s;
+
+  @include breakpoint('<=medium') {
+    width: 0;
+  }
+
+  &.s-full {
+    width: _size(sidebar-width);
+    transition: width 0.5s;
+
+    @include breakpoint('<=small') {
+      width: 100%;
+    }
+  }
 
   .inner {
     @include vendor('display', 'flex');
@@ -38,6 +43,8 @@
   }
 
   &__nav {
+    padding: 1rem 3rem;
+    
     ul {
       list-style: none;
       padding: 0;
@@ -53,59 +60,6 @@
       @include vendor('transform', 'translateY(2em)');
       opacity: 0;
     }
-  }
-
-  @include breakpoint('<=large') {
-    height: _size(sidebar-height);
-    left: 0;
-    line-height: _size(sidebar-height);
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-    top: 0;
-    width: 100%;
-
-    .inner {
-      @include vendor('flex-direction', 'row');
-      @include vendor('align-items', 'stretch');
-      height: inherit;
-      line-height: inherit;
-    }
-
-    .sidebar__nav {
-      height: inherit;
-      line-height: inherit;
-
-      ul {
-        @include vendor('display', 'flex');
-        height: inherit;
-        line-height: inherit;
-        margin: 0;
-      }
-
-      .sb-nav__item {
-        display: block;
-        height: inherit;
-        line-height: inherit;
-        margin: 0 0 0 2em;
-        padding: 0;
-      }
-
-      .sb-nav__link {
-        height: inherit;
-        line-height: inherit;
-        padding: 0;
-
-        &:after {
-          background-image: none;
-          background-color: _palette(accent3);
-        }
-      }
-    }
-  }
-
-  @include breakpoint('<=small') {
-    display: none;
   }
 }
 

@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-    $sidebar = $('.header__nav');
+		$sidebar = $('.sidebar');
 
 	// Breakpoints.
 		breakpoints({
@@ -136,20 +136,15 @@
 				top: '-10vh',
 				bottom: '-10vh',
 				initialize: function() {
-
 					// Deactivate section.
 						$(this).addClass('inactive');
-
 				},
 				enter: function() {
-
 					// Activate section.
 						$(this).removeClass('inactive');
-
 				}
 			})
 			.each(function() {
-
 				var	$this = $(this),
 					$image = $this.find('.image'),
 					$img = $image.find('img'),
@@ -157,14 +152,12 @@
 
 				// Assign image.
 					$image.css('background-image', 'url(' + $img.attr('src') + ')');
-
 				// Set background position.
 					if (x = $img.data('position'))
 						$image.css('background-position', x);
 
 				// Hide <img>.
 					$img.hide();
-
 			});
 
 	// Features.
@@ -174,17 +167,21 @@
 				top: '-20vh',
 				bottom: '-20vh',
 				initialize: function() {
-
-					// Deactivate section.
-						$(this).addClass('inactive');
-
+				// Deactivate section.
+					$(this).addClass('inactive');
 				},
 				enter: function() {
-
-					// Activate section.
-						$(this).removeClass('inactive');
-
+				// Activate section.
+					$(this).removeClass('inactive');
 				}
 			});
+
+	// Toggle.
+	$('.btn-burguer').on('click', function() {
+		$('.sidebar').toggleClass('s-full');
+		$('.wrapper').toggleClass('w-push');
+		$(this).toggleClass('open-bar');
+    return(false);
+	});
 
 })(jQuery);

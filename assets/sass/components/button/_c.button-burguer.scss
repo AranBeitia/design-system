@@ -1,0 +1,58 @@
+.btn-burguer {
+	display: none;
+
+	@include breakpoint ('<=medium') {
+		display: block;
+		margin-right: 1rem;
+		width: 24px;
+		height: 16px;
+		position: relative;
+		transform: rotate(0deg);
+		transition: .5s ease-in-out;
+		cursor: pointer;
+	}
+	
+	&__bar {
+		display: block;
+		height: 4px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		opacity: 1;
+		border-radius: 6px;
+		background: _color(blue);
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+
+		&:nth-child(1) {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: 8px;
+		}
+
+		&:nth-child(3) {
+			top: 16px;
+		}
+	}
+}
+
+.open-bar {
+	.btn-burguer__bar {
+		&:nth-child(1) {
+			top: 8px;
+			transform: rotate(135deg);
+		}
+
+		&:nth-child(2) {
+			opacity: 0;
+			left: -20px;
+		}
+	
+		&:nth-child(3) {
+			top: 8px;
+			transform: rotate(-135deg);
+		}
+	}
+}

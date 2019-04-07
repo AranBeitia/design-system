@@ -1,64 +1,23 @@
-/* Header */
-
 .header {
   position: fixed;
-  z-index: 1000;
-  @include vendor('display', 'flex');
-	@include vendor('justify-content', 'flex-start');
-	@include vendor('align-items', 'center');
-  width: 100%;
+	height: _size(header-height);
+	width: 100%;
+	padding: 10px;
+	z-index: _misc(z-index-base);
   background-color: _color(white);
-  cursor: default;
-	padding: 5px;
+	cursor: default;
+	
+  @include breakpoint ('<=large'){
+    @include vendor('display', 'flex');
+    @include vendor('align-items', 'center');
+  }
 
-	&__brand {
-		@include vendor('display', 'flex');
-		@include vendor('justify-content', 'flex-start');
+	&-brand {
 		font-size: _f-size(huge);
 		line-height: 0;
-	}
 
-	&__nav {
-		margin-left: auto;
-
-		> ul {
-			margin: 0;
-			padding: 0;
+		&__logo {
+			width: 50px;
 		}
-	}
-}
-
-.h-logo {
-  width: 50px;
-}
-
-.h-nav {
-	&__item {
-		display: inline-block;
-		margin-left: 1.75em;
-		padding: 0;
-		vertical-align: middle;
-
-		&:first-child {
-			margin-left: 0;
-		}
-	}
-
-	&__link {
-		border: 0;
-		color: _color(grey);
-		display: inline-block;
-		font-size: _f-size(tiny);
-		font-weight: _font(weight-bold);
-		letter-spacing: _font(kerning-alt);
-		text-transform: uppercase;
-
-		&:hover {
-			color: _color(blue);
-		}
-
-		&.active {
-			color: _color(blue);
-		}	
 	}
 }

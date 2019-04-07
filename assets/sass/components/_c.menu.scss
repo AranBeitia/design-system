@@ -34,3 +34,45 @@
 			}
 		}
 	}
+
+	//secondary menu
+.header__nav {
+	margin-left: auto;
+	padding-top: 60px;
+
+	> ul {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.h-nav {
+	&__item {
+		display: inline-block;
+		margin-left: 1.75em;
+		padding: 0;
+		vertical-align: middle;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		border: 0;
+		color: _color(grey);
+		display: inline-block;
+		font-size: _f-size(tiny);
+		font-weight: _font(weight-bold);
+		letter-spacing: _font(kerning-alt);
+		text-transform: uppercase;
+
+		&:hover {
+			color: _color(blue);
+		}
+
+		&.active {
+			color: _color(blue);
+		}	
+	}
+}
