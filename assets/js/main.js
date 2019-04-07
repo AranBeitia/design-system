@@ -177,7 +177,7 @@
 			});
 
 	// Toggle.
-	$('.header__menu-btn').on('click', function() {
+	$('.btn-burguer').on('click', function() {
 		$('.sidebar').toggleClass('s-full');
 		$('.wrapper').toggleClass('w-push');
 		$(this).toggleClass('open-bar');

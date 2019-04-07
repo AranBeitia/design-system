@@ -1,42 +1,19 @@
-///
-/// Hyperspace by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+.wrapper {
+  .sidebar + & {
+    margin-left: _size(sidebar-width);
+    transition: margin-left .5s;
 
-/* Wrapper (main) */
-.w-push {
-  margin-left: _size(sidebar-width);
-  transition: margin-left .5s;
+    @include breakpoint('<=medium') {
+      margin-left: 0;
+
+      &.w-push {
+        margin-left: _size(sidebar-width);
+        transition: margin-left .5s;
+      }
+    }
+  }
 }
-	// .wrapper {
-	// 	.sidebar + & {
-	// 		margin-left: _size(sidebar-width);
-      
-	// 		@include breakpoint('<=medium') {
-	// 			margin-left: 0;
-	// 			padding-top: _size(sidebar-height);
-	// 		}
-
-	// 		@include breakpoint('<=small') {
-	// 			padding-top: 0;
-	// 		}
-	// 	}
- 	// }   
 /*
-		.header + & {
-			> .wrapper {
-				> .inner {
-          margin-left: _size(sidebar-width);
-					margin: 0 auto;
-				}
-			}
-		}*/
-
-    
-
-
-  /*
   .main-layout {
   display: grid;
   grid-template-areas: 
