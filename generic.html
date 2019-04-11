@@ -29,40 +29,48 @@
       </nav>
     </header>
 		<!-- Header -->
-
 		<!-- Sidebar -->
-    <section class="sidebar">
-      <div class="inner">
-        <nav class="sidebar__nav">
-          <div class="nav__group">
-            <ul>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Intro</a></li>
-            </ul>
-          </div>
-          <div class="nav__group">
-            <header>
-              <span>Documentation</span>
-            </header>
-            <ul>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="#requirements">Requirements</a></li>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="#structure">Structure</a></li>
-            </ul>
-          </div>
-          <div class="nav__group">
-            <header>
-              <span>Design elements</span>
-            </header>
-            <ul>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Buttons</a></li>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="colours.html">Colours</a></li>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Icons</a></li>
-              <li class="sb-nav__item"><a class="sb-nav__link active" href="generic.html">Typography</a></li>
-              <li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Forms</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </section>
+		<nav class="sidebar">
+			<ul class="sidebar__nav accordion animated">
+				<li class="nav__group">
+					<input type="checkbox" name="start" id="start">
+					<label for="start" class="accordion__label">Getting start</label>
+					<ul>
+						<li class="sb-nav__item"><a class="sb-nav__link active" href="#intro">About</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="#requirements">Requirements</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="#structure">Structure</a></li>
+					</ul>
+				</li>
+				<li class="nav__group">
+					<input type="checkbox" name="guidelines" id="guidelines">
+					<label for="guidelines" class="accordion__label">Guidelines</label>
+					<ul>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Layout</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="colours.html">Colours</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Icons</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Typography</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Themes</a></li>
+					</ul>
+				</li>
+				<li class="nav__group">
+					<input type="checkbox" name="components" id="components">
+					<label for="components" class="accordion__label">Components</label>
+					<ul>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Buttons</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Form</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Accordion</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Dropdown</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Switcher</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Loading</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Modal</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Notification</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Card tile</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Progress indicator</a></li>
+						<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 		<!-- Wrapper -->
 			<div class="wrapper">
 				<!-- Main -->
@@ -77,13 +85,13 @@
 			</div>
 
 		<!-- Footer -->
-			<footer class="footer c-wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+		<footer class="footer c-wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

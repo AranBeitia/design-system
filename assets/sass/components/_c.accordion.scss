@@ -12,6 +12,8 @@
   }
 
   input[type=checkbox]+label.accordion__label {
+    padding-left: 0;
+    
     &:before {
       display: none;
     }

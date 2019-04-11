@@ -47,6 +47,10 @@
   }
 }
 
+.nav_group {
+  padding-left: 2.5rem;
+}
+
 .sb-nav {
   &__item {
     @include vendor('transform', 'translateY(0)');
