@@ -184,7 +184,7 @@
     return(false);
 	});
 //Accordion
-	var accordionsMenu = $('.accordion-menu');
+	var accordionsMenu = $('.accordion');
 
 	if( accordionsMenu.length > 0 ) {
 		

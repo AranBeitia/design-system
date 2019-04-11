@@ -6,7 +6,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
-  text-align: right;
   top: _size(header-height);
   width: _size(sidebar-width);
   z-index: _misc(z-index-base);
@@ -25,29 +24,14 @@
     }
   }
 
-  .inner {
-    @include vendor('display', 'flex');
-    @include vendor('flex-direction', 'column');
-    @include vendor('justify-content', 'center');
-    @include vendor('transform', 'translateY(0)');
-    @include vendor('transition', (
-      'opacity #{_duration(activation)} ease',
-    ));
-    min-height: 100%;
-    opacity: 1;
-    width: 100%;
-
-    body.is-ie & {
-      height: 100%;
-    }
-  }
-
   &__nav {
-    padding: 1rem 3rem;
+    padding: 2rem;
+    margin-bottom: 0;
     
     ul {
       list-style: none;
       padding: 0;
+      padding-left: 2.5rem;
     }
   }
 

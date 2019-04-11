@@ -1,6 +1,5 @@
-.accordion-menu {
+.accordion {
   width: 100%;
-  background: #4d5158;
 
   ul {
     /* by default hide all sub menus */
@@ -12,158 +11,14 @@
     list-style: none;
   }
 
-  input[type=checkbox] {
-    /* hide native checkbox */
-    position: absolute;
-    opacity: 0;
+  input[type=checkbox]+label.accordion__label {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      content: "\f00c";
+      font-family: FontAwesome;
+    }
   }
 }
-/*
-.no-touch .accordion-menu label:hover, 
-.no-touch .accordion-menu a:hover {
-  background: #52565d;
-}
-.accordion-menu label::before, 
-.accordion-menu label::after, 
-.accordion-menu a::after {
-  /* icons *
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.accordion-menu label {
-  cursor: pointer;
-}
-.accordion-menu label::before, 
-.accordion-menu label::after {
-  background-repeat: no-repeat;
-}
-.accordion-menu label::before {
-  /* arrow icon *
-  left: 18px;
-  background-position: 0 0;
-  transform: translateY(-50%) rotate(-90deg);
-}
-.accordion-menu label::after {
-  /* folder icons *
-  left: 41px;
-  background-position: -16px 0;
-}
-.accordion-menu a::after {
-  /* image icon *
-  left: 36px;
-}
-.accordion-menu input[type=checkbox]:checked + label::before {
-  /* rotate arrow *
-  transform: translateY(-50%);
-}
-.accordion-menu input[type=checkbox]:checked + label::after {
-  /* show open folder icon if item is checked *
-  background-position: -32px 0;
-}
-.accordion-menu input[type=checkbox]:checked + label + ul,
-.accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
-  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
-  /* show children when item is checked *
-  display: block;
-}
-.accordion-menu ul label,
-.accordion-menu ul a {
-  background: #35383d;
-  box-shadow: inset 0 -1px #41444a;
-  padding-left: 82px;
-}
-.no-touch .accordion-menu ul label:hover, .no-touch
-.accordion-menu ul a:hover {
-  background: #3c3f45;
-}
-.accordion-menu > li:last-of-type > label,
-.accordion-menu > li:last-of-type > a,
-.accordion-menu > li > ul > li:last-of-type label,
-.accordion-menu > li > ul > li:last-of-type a {
-  box-shadow: none;
-}
-.accordion-menu ul label::before {
-  left: 36px;
-}
-.accordion-menu ul label::after,
-.accordion-menu ul a::after {
-  left: 59px;
-}
-.accordion-menu ul ul label,
-.accordion-menu ul ul a {
-  padding-left: 100px;
-}
-.accordion-menu ul ul label::before {
-  left: 54px;
-}
-.accordion-menu ul ul label::after,
-.accordion-menu ul ul a::after {
-  left: 77px;
-}
-.accordion-menu ul ul ul label,
-.accordion-menu ul ul ul a {
-  padding-left: 118px;
-}
-.accordion-menu ul ul ul label::before {
-  left: 72px;
-}
-.accordion-menu ul ul ul label::after,
-.accordion-menu ul ul ul a::after {
-  left: 95px;
-}
-@media only screen and (min-width: 600px) {
-  .accordion-menu label, 
-  .accordion-menu a {
-    padding: 24px 24px 24px 82px;
-    font-size: 1.9rem;
-  }
-  .accordion-menu label::before {
-    left: 24px;
-  }
-  .accordion-menu label::after {
-    left: 53px;
-  }
-  .accordion-menu ul label,
-  .accordion-menu ul a {
-    padding-left: 106px;
-  }
-  .accordion-menu ul label::before {
-    left: 48px;
-  }
-  .accordion-menu ul label::after,
-  .accordion-menu ul a::after {
-    left: 77px;
-  }
-  .accordion-menu ul ul label,
-  .accordion-menu ul ul a {
-    padding-left: 130px;
-  }
-  .accordion-menu ul ul label::before {
-    left: 72px;
-  }
-  .accordion-menu ul ul label::after,
-  .accordion-menu ul ul a::after {
-    left: 101px;
-  }
-  .accordion-menu ul ul ul label,
-  .accordion-menu ul ul ul a {
-    padding-left: 154px;
-  }
-  .accordion-menu ul ul ul label::before {
-    left: 96px;
-  }
-  .accordion-menu ul ul ul label::after,
-  .accordion-menu ul ul ul a::after {
-    left: 125px;
-  }
-}
-.accordion-menu.animated label::before {
-  /* this class is used if you're using jquery to animate the accordion *
-  transition: transform 0.3s;
-}
-*/
