@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div class="main-wrapper">
+		<div class="grid">
 			<!-- Header -->
 			<header class="header">
 				<div class="btn-burguer">
@@ -28,11 +28,11 @@
 					</a>
 				</div>
 			</header>
-
-			<nav class="sidebar">
+		
+			<aside class="sidebar">
 				<ul class="sidebar__nav accordion animated">
 					<li class="nav__group">
-						<input type="checkbox" name ="start" id="start">
+						<input type="checkbox" name="start" id="start">
 						<label for="start" class="accordion__label">Getting start</label>
 						<ul>
 							<li class="sb-nav__item"><a class="sb-nav__link active" href="#intro">About</a></li>
@@ -41,7 +41,7 @@
 						</ul>
 					</li>
 					<li class="nav__group">
-						<input type="checkbox" name ="guidelines" id="guidelines">
+						<input type="checkbox" name="guidelines" id="guidelines">
 						<label for="guidelines" class="accordion__label">Guidelines</label>
 						<ul>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="#intro">Layout</a></li>
@@ -52,7 +52,7 @@
 						</ul>
 					</li>
 					<li class="nav__group">
-						<input type="checkbox" name ="components" id="components">
+						<input type="checkbox" name="components" id="components">
 						<label for="components" class="accordion__label">Components</label>
 						<ul>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="elements.html">Buttons</a></li>
@@ -69,19 +69,33 @@
 						</ul>
 					</li>
 				</ul>
-			</nav>
-
-			<!-- Wrapper -->
-			<main class="wrapper">
-			</main>
-
-			<!-- Footer -->
-			<footer class="footer c-wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+			</aside>
+		
+			<main class="main">
+				<div class="main-overview">
+					<div class="overviewcard">
+						<div class="overviewcard__icon">Overview</div>
+						<div class="overviewcard__info">Card</div>
+					</div>
+					<div class="overviewcard">
+						<div class="overviewcard__icon">Overview</div>
+						<div class="overviewcard__info">Card</div>
+					</div>
+					<div class="overviewcard">
+						<div class="overviewcard__icon">Overview</div>
+						<div class="overviewcard__info">Card</div>
+					</div>
+					<div class="overviewcard">
+						<div class="overviewcard__icon">Overview</div>
+						<div class="overviewcard__info">Card</div>
+					</div>
 				</div>
+			</main>
+		
+			<footer class="footer">
+				<p><span class="footer__copyright">&copy;</span> 2018 MTH</p>
+				<p>Crafted with <i class="fas fa-heart footer__icon"></i> by <a href="https://www.linkedin.com/in/matt-holland/"
+						target="_blank" class="footer__signature">Matt H</a></p>
 			</footer>
 		</div>
 		<!-- Scripts -->

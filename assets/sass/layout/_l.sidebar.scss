@@ -1,4 +1,5 @@
 .sidebar {
+  grid-area: sidebar;
   background: _color(blue);
   cursor: default;
   height: calc(100vh-#{_size(header-height)});

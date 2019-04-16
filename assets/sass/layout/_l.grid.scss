@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: _size(sidebar-width) 1fr;
+  grid-template-rows: _size(header-height) 1fr _size(header-height);
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}

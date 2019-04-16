@@ -1,11 +1,10 @@
 .header {
+  grid-area: header;
   position: fixed;
-	height: _size(header-height);
-	width: 100%;
+  width: 100%;
 	padding: 10px;
-	z-index: _misc(z-index-base);
+	z-index: 2;
   background-color: _color(white);
-	cursor: default;
 	
   @include breakpoint ('<=large'){
     @include vendor('display', 'flex');
