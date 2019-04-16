@@ -1,10 +1,18 @@
 .grid {
   display: grid;
-  grid-template-columns: _size(sidebar-width) 1fr;
+  grid-template-columns: 1fr; /* Side nav is hidden on mobile */
   grid-template-rows: _size(header-height) 1fr _size(header-height);
   grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
   height: 100vh;
+
+  @include breakpoint('<=medium') {
+    grid-template-columns: _size(header-height) 1fr;/* Show the sidebar */
+    grid-template-areas: 
+      "header header"
+      "main main"
+      "footer footer";
+  }
 }
