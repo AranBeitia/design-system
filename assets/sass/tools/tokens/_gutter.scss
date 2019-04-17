@@ -1,0 +1,13 @@
+$gutter: $content-padding; // 15px
+
+$gutter1_2: $gutter / 2; // 7.5px
+$gutter1_3: $gutter / 3; // 5px
+$gutter1_4: $gutter / 4; // 3,75
+
+$gutter2_3: ($gutter / 3) * 2; // 10px
+$gutter3_2: ($gutter / 2) * 3; // 22,5px
+
+$gutter2: $gutter * 2; // 30px
+$gutter3: $gutter * 3; // 45px
+$gutter4: $gutter * 4; // 60px
+$gutter5: $gutter * 5; // 75px

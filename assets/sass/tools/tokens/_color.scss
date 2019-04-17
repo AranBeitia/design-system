@@ -1,0 +1,46 @@
+// Color palette
+$colors: (
+  white:				#ffffff,
+  grey-light:		#f0f0f0,
+  grey:					#606060,
+  grey-dark:		#525252,
+  black:				#000000,
+  siena:				#f07662,
+  siena-light:	rgba(240, 118, 98, .2),
+  blue:					#103184,
+  blue-light:		rgba(16, 49, 133, .2),
+  yellow:				#fbb730,
+  hol-grey:			#eeeeee,
+  green:				#8bc242,
+  brown-dark:		#602F27,
+  bronze:				#9f916d,
+  bronze-dark:	#3f3a2c,
+  bronze-light:	#979797,
+  silver:				#cbcccd,
+  gold:					#af8b1b,
+  gold-dark:		#46370b,
+  gold-light:		rgba(#af8b1b, .2),
+  brown:				#914146,
+  emerald-dark:	#027180,
+  emerald:			#00aec6,
+  pink:					#e196aa,
+  yellow-dark: 	#ffb922
+);
+
+// Gets a color value
+@function _color($keys...) {
+	@return val($colors, $keys...);
+}
+
+// Construction of the classes and attributes
+@each $color-key, $color-value in $colors {
+  .color--#{$color-key},
+  [color-#{$color-key}] {
+    color: $color-value !important;
+  }
+
+  .bg-color--#{$color-key},
+  [bg-color-#{$color-key}] {
+    background-color: $color-value !important;
+  }
+}
