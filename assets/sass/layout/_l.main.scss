@@ -1,6 +1,6 @@
 .main {
   grid-area: main;
-  background-color: #8fd4d9;
+  background-color: rgba(_color(blue-light), .1);
 
   .sidebar + & {
     margin-left: _size(sidebar-width);
@@ -26,11 +26,11 @@
     background-color: #e3e4e6;
     background-size: cover;
     
-    &#{&}--layout {
+    &#{&}--img-layout {
       background-image: url(../../img/layout.jpg);
     }
 
-    &#{&}--color {
+    &#{&}--img-color {
       background-image: url(../../img/color.jpg);
     }
   }

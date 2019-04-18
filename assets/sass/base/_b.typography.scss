@@ -67,7 +67,7 @@
 	}
 
 	h1 {
-		font-size: _f-size(huge);
+		font-size: _f-size(f-size-xxxl);
 
 		&.major {
 			margin: 0 0 (_size(element-margin) * 0.65) 0;
@@ -89,15 +89,15 @@
 	}
 
 	h2 {
-		font-size: _f-size(bigger);
+		font-size: _f-size(f-size-xxl);
 	}
 
 	h3 {
-		font-size: _f-size(big);
+		font-size: _f-size(f-size-xl);
 	}
 
 	h4 {
-		font-size: _f-size(normal);
+		font-size: _f-size(f-size-l);
 	}
 
 	h5 {
@@ -105,43 +105,43 @@
 	}
 
 	h6 {
-		font-size: _f-size(tiny);
+		font-size: _f-size(f-size-xs);
 	}
 
 	@include breakpoint('<=small') {
 		h1 {
-			font-size: 20px;
+			font-size: _f-size(f-size-xxl);
 		}
 
 		h2 {
-			font-size: 18px;
+			font-size: _f-size(f-size-l);
 		}
 
 		h3 {
-			font-size: _f-size(normal);
+			font-size: _f-size(f-size-m);
 		}
 
 		h4 {
-			font-size: 14px;
+			font-size: _f-size(f-size-s);
 		}
 
 		h5 {
-			font-size: _f-size(tiny);
+			font-size: _f-size(f-size-xs);
 		}
 
 		h6 {
-			font-size: 12px;
+			font-size: _f-size(f-size-xs);
 		}
 	}
 
 	sub {
-		font-size: 14px;
+		font-size: _f-size(f-size-s);
 		position: relative;
 		top: 0.5em;
 	}
 
 	sup {
-		font-size: 14px;
+		font-size: _f-size(f-size-s);
 		position: relative;
 		top: -0.5em;
 	}
