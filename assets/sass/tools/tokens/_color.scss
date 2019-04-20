@@ -1,6 +1,14 @@
+//Misc
+$color-white: #ffffff;
+
+$color-border:				rgba($color-white, .35);
+$color-border-bg:	 		rgba($color-white, .25);
+$color-border-hover:	rgba($color-white, .5);
+
+
 // Color palette
 $colors: (
-  white:				#ffffff,
+  white:				$color-white,
   grey-light:		#f0f0f0,
   grey:					#606060,
   grey-dark:		#525252,
@@ -28,15 +36,19 @@ $colors: (
   yellow-dark: 	#ffb922
 );
 
-// Gets a color value
-@function _color($keys...) {
-	@return val($colors, $keys...);
-}
-
-//Misc
-$color-border:				rgba(_color(white), .35);
-$color-border-bg:	 		rgba(_color(white), .25);
-$color-border-hover:	rgba(_color(white), .5);
+// Palette.
+	$palette: (
+		bg:					#312450,
+		bg-alt:				darken(#312450, 5),
+		fg:					rgba(255,255,255,0.55),
+		fg-light:		rgba(255,255,255,0.35),
+		accent1:		#5e42a6,
+		accent1-alt:	darken(#5e42a6, 10),
+		accent2:		#5052b5,
+		accent2-alt:	darken(#5052b5, 10),
+		accent3:		#b74e91,
+		accent3-alt:	darken(#b74e91, 10)
+	);
 
 // Construction of the classes and attributes
 @each $color-key, $color-value in $colors {

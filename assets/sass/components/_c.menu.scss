@@ -126,7 +126,7 @@
     }
 
     &.active {
-      color: _palette(fg-bold);
+      color: _color(white);
 
       &:after {
         max-width: 100%;

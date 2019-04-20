@@ -1,7 +1,3 @@
-// Margins and paddings with normal gutter, there are in Ionic utilities (margin-top, margin-vertical, etc).
-// @link: https://ionicframework.com/docs/theming/css-utilities/#element-margin
-// These are complementary for other multiples:
-
 .margin-top-2,
 [margin-top-2] {
   margin-top: $gutter2;
@@ -24,7 +20,7 @@
 
 .padding-top-3,
 [padding-top-3] {
-  padding-top: $gutter2;
+  padding-top: $gutter3;
 }
 
 .padding-top-1_2,

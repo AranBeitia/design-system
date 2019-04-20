@@ -71,3 +71,23 @@ $font-sizes: (
   font-size: $size;
   line-height: $size;
 }
+/**/
+// Font.
+	$font: (
+		family:					('Source Sans Pro', sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:					normal,
+		weight-bold:		bold,
+		kerning-alt:		0.15em
+	);
+
+// Font size.
+	$f-size: (
+		f-size-xxxl:	72px,
+		f-size-xxl:		28px,
+		f-size-xl:		22px,
+		f-size-l:			18px,
+		f-size-m:			16px,
+		f-size-s:			14px,
+		f-size-xs:		13px
+	);

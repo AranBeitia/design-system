@@ -19,7 +19,7 @@
 		border: solid 1px !important;
 		border-color: $color-border !important;
 		border-radius: 3em;
-		color: _palette(fg-bold) !important;
+		color: _color(white) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -42,7 +42,7 @@
 				'opacity #{_duration(transition)} ease',
 				'transform #{_duration(transition)} ease'
 			));
-			background: _palette(fg-bold);
+			background: _color(white);
 			border-radius: 3em;
 			content: '';
 			height: 100%;
@@ -72,7 +72,7 @@
 		}
 
 		&.primary {
-			background-color: _palette(fg-bold);
+			background-color: _color(white);
 			color: _palette(bg) !important;
 
 			&:after {
@@ -96,7 +96,7 @@
 			}
 
 			&:active {
-				border-color: _palette(fg-bold) !important;
+				border-color: _color(white) !important;
 
 				&:after {
 					opacity: 0.1;

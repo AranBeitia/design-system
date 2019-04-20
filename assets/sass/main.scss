@@ -1,11 +1,12 @@
-@import 'tools/libs/vars';
 @import 'tools/libs/functions';
+@import 'tools/tokens/tokens';
+
+@import 'tools/libs/vars';
+
 @import 'tools/libs/mixins';
 @import 'tools/libs/vendor';
 @import 'tools/libs/breakpoints';
 @import 'tools/libs/html-grid';
-
-@import 'tools/tokens/tokens';
 
 @import 'font-awesome.min.css';
 

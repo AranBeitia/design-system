@@ -1,4 +1,4 @@
-$gutter: $content-padding; // 15px
+$gutter: 15px;
 
 $gutter1_2: $gutter / 2; // 7.5px
 $gutter1_3: $gutter / 3; // 5px
@@ -11,3 +11,15 @@ $gutter2: $gutter * 2; // 30px
 $gutter3: $gutter * 3; // 45px
 $gutter4: $gutter * 4; // 60px
 $gutter5: $gutter * 5; // 75px
+
+// Size.
+$size: (
+	border-radius:		$gutter1_3,
+	border-width:		1px,
+	element-height:		2.75rem,
+	element-margin:		2em,
+	sidebar-width:		18rem,
+	sidebar-height:		3.5em,	// when <=large is active
+	header-height:		$gutter4,
+	full-width:		100%
+);

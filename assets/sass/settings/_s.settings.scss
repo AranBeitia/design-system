@@ -35,6 +35,10 @@
     &-layout {
       background-image: url(../../img/layout.jpg);
     }
+
+		&-icon {
+      background-image: url(../../img/icon.jpg);
+    }
   }
 }
 
@@ -51,3 +55,9 @@
   }
 }
 
+//Tile
+.card-tile {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
