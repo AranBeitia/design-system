@@ -5,10 +5,9 @@
 */
 
 (function($) {
-
 	var	$window = $(window),
 		$body = $('body'),
-		$sidebar = $('.sidebar');
+    $scrollVertical =$('.scroll-vertical');
 
 	// Breakpoints.
 		breakpoints({
@@ -31,25 +30,22 @@
 		});
 
 	// Forms.
-
 		// Hack: Activate non-input submits.
 			$('form').on('click', '.submit', function(event) {
-
 				// Stop propagation, default.
 					event.stopPropagation();
 					event.preventDefault();
 
 				// Submit form.
 					$(this).parents('form').submit();
-
 			});
 
 	// Sidebar.
-		if ($sidebar.length > 0) {
+  if ($scrollVertical.length > 0) {
 
-			var $sidebar_a = $sidebar.find('a');
+    var $scrollVertical_a = $scrollVertical.find('a');
 
-			$sidebar_a
+			$scrollVertical_a
 				.addClass('scrolly')
 				.on('click', function() {
 
@@ -60,7 +56,7 @@
 							return;
 
 					// Deactivate all links.
-						$sidebar_a.removeClass('active');
+						$scrollVertical_a.removeClass('active');
 
 					// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
 						$this
@@ -95,9 +91,9 @@
 									$section.removeClass('inactive');
 
 								// No locked links? Deactivate all links and activate this section's one.
-									if ($sidebar_a.filter('.active-locked').length == 0) {
+                if ($scrollVertical_a.filter('.active-locked').length == 0) {
 
-										$sidebar_a.removeClass('active');
+										$scrollVertical_a.removeClass('active');
 										$this.addClass('active');
 
 									}
@@ -105,12 +101,9 @@
 								// Otherwise, if this section's link is the one that's locked, unlock it.
 									else if ($this.hasClass('active-locked'))
 										$this.removeClass('active-locked');
-
 							}
 						});
-
 				});
-
 		}
 
 	// Scrolly.
@@ -121,11 +114,10 @@
 				// If <=large, >small, and sidebar is present, use its height as the offset.
 					if (breakpoints.active('<=large')
 					&&	!breakpoints.active('<=small')
-					&&	$sidebar.length > 0)
-						return $sidebar.height();
+            && $scrollVertical.length > 0)
+            return $scrollVertical.height();
 
 				return 0;
-
 			}
 		});
 
@@ -205,7 +197,6 @@
 			});
 		});
 	}
-
 })(jQuery);
 
 /*example*/

@@ -16,33 +16,14 @@
   }
 
   &__header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding:  20px;
-    height: 150px;
-    background-color: #e3e4e6;
-    background-size: cover;
-    
-    &#{&}--img-layout {
-      background-image: url(../../img/layout.jpg);
-    }
-
-    &#{&}--img-color {
-      background-image: url(../../img/color.jpg);
-    }
+    position: fixed;
+    top: _size(header-height);
+    width: 100%;
+    z-index: _misc(z-index-base);
+    transition: width 0.5s;
   }
 
   &__content {
-    padding: 80px;
-
-    @include breakpoint('<=small') {
-      padding: 40px;
-    }
-
-    @include breakpoint('<=xsmall') {
-      padding: 20px;
-    }
+    margin-top: 13rem;
   }
 }

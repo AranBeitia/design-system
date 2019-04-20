@@ -22,9 +22,9 @@
 					</a>
 				</div>
 			</header>
-			<aside class="sidebar">
-				<ul class="sidebar__nav accordion animated">
-					<li class="nav__group">
+			<aside class="sidebar scroll-vertical">
+				<ul class="menu-sidebar accordion animated">
+					<li>
 						<input type="checkbox" name="start" id="start">
 						<label for="start" class="accordion__label">Getting start</label>
 						<ul>
@@ -33,7 +33,7 @@
 							<li class="sb-nav__item"><a class="sb-nav__link" href="#structure">Structure</a></li>
 						</ul>
 					</li>
-					<li class="nav__group">
+					<li>
 						<input type="checkbox" name="guidelines" id="guidelines">
 						<label for="guidelines" class="accordion__label">Guidelines</label>
 						<ul>
@@ -44,7 +44,7 @@
 							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Themes</a></li>
 						</ul>
 					</li>
-					<li class="nav__group">
+					<li>
 						<input type="checkbox" name="components" id="components">
 						<label for="components" class="accordion__label">Components</label>
 						<ul>
@@ -64,172 +64,270 @@
 				</ul>
 			</aside>
 			<main class="main">
-				<div class="main__header main__header--img-color">
-					<h1>Color</h1>
-					<nav class="header__nav">
+				<div class="main__header">
+					<div class="[ header-bg header-bg__img-color ]">
+						<h1 class="h1--white">Color</h1>
+					</div>
+					<nav class="menu-tab scroll-vertical">
 						<ul>
-							<li class="h-nav__item"><a href="#palette" class="h-nav__link active">Palette</a></li>
-							<li class="h-nav__item"><a href="#color-usage" class="h-nav__link">Usage</a></li>
+							<li class="menu-tab__item"><a href="#palette" class="menu-tab__link active">Palette</a></li>
+							<li class="menu-tab__item"><a href="#color-token" class="menu-tab__link">Usage</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="main__content">
-					<section id="palette">
-						<h2>Brand color</h2>
-						<p>Primary brand colors are used for elements that must reflect AXA's brand. Each color has a darker and a lighter
-						shade.</p>
-						<div class="[ card-grid card-grid--heightx2 ]">
-							<div class="card">
-								<div class="card--expand color--white bg-color--siena">
-									<span class="item__title">Axa siena</span>
-									<span class="item__define">#f07662</span>
+					<section id="palette" class="section">
+						<div>
+							<h2>Brand color</h2>
+							<p>Primary brand colors are used for elements that must reflect AXA's brand. Each color has a darker and a lighter
+							shade.</p>
+							<div class="[ card-grid card-grid--heightx2 ]">
+								<div class="card">
+									<div class="card--expand color--white bg-color--siena">
+										<span class="item__title">Axa siena</span>
+										<span class="item__define">#f07662</span>
+									</div>
+									<div class="card--expand color--siena bg-color--siena-light">
+										<span class="item__title">Axa siena light</span>
+										<span class="item__define">#fce4e0</span>
+									</div>
 								</div>
-								<div class="card--expand color--siena bg-color--siena-light">
-									<span class="item__title">Axa siena light</span>
-									<span class="item__define">#fce4e0</span>
+								<div class="card">
+									<div class="card--expand color--white bg-color--blue">
+										<span class="item__title">Axa blue</span>
+										<span class="item__define">#103184</span>
+									</div>
+									<div class="card--expand color--blue bg-color--blue-light">
+										<span class="item__title">Axa blue light</span>
+										<span class="item__define">#e7f5ff</span>
+									</div>
 								</div>
-							</div>
-							<div class="card">
-								<div class="card--expand color--white bg-color--blue">
-									<span class="item__title">Axa blue</span>
-									<span class="item__define">#103184</span>
-								</div>
-								<div class="card--expand color--blue bg-color--blue-light">
-									<span class="item__title">Axa blue light</span>
-									<span class="item__define">#e7f5ff</span>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card--expand color--white bg-color--yellow">
-									<span class="item__title">Axa yellow</span>
-									<span class="item__define">#fbb730</span>
-								</div>
-								<div class="card--expand color--yellow bg-color--hol-grey">
-									<span class="item__title">Axa HOL grey</span>
-									<span class="item__define">#eeeeee</span>
+								<div class="card">
+									<div class="card--expand color--white bg-color--yellow">
+										<span class="item__title">Axa yellow</span>
+										<span class="item__define">#fbb730</span>
+									</div>
+									<div class="card--expand color--yellow bg-color--hol-grey">
+										<span class="item__title">Axa HOL grey</span>
+										<span class="item__define">#eeeeee</span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</section>
-					<section>
-						<h2>Level color</h2>
-						<p>Level colors are used for user's levels.</p>
-						<div class="[ card-grid card-grid--heightx3 ]">
-							<div class="card">
-								<div class="card--expand color--white bg-color--siena">
-									<span class="item__title">Beginner</span>
-									<span class="item__define">#f07662</span>
+						<div>
+							<h2>Level color</h2>
+							<p>Level colors are used for user's levels.</p>
+							<div class="[ card-grid card-grid--heightx3 ]">
+								<div class="card">
+									<div class="card--expand color--white bg-color--siena">
+										<span class="item__title">Beginner</span>
+										<span class="item__define">#f07662</span>
+									</div>
+									<div class="card--expand color--white bg-color--brown-dark">
+										<span class="item__title">Beginner font</span>
+										<span class="item__define">#914146</span>
+									</div>
+									<div class="card--expand color--siena bg-color--siena-light">
+										<span class="item__title">Beginner bg</span>
+										<span class="item__define">#fce4e0</span>
+									</div>
 								</div>
-								<div class="card--expand color--white bg-color--brown-dark">
-									<span class="item__title">Beginner font</span>
+								<div class="card">
+									<div class="card--expand color--white bg-color--bronze">
+										<span class="item__title">Bronze</span>
+										<span class="item__define">#9f916d</span>
+									</div>
+									<div class="card--expand color--white bg-color--bronze-dark">
+										<span class="item__title">Bronze font</span>
+										<span class="item__define">#3f3a2c</span>
+									</div>
+									<div class="card--expand color--white bg-color--bronze-light">
+										<span class="item__title">Bronze bg</span>
+										<span class="item__define">#979797</span>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card--expand color--grey-dark bg-color--silver">
+										<span class="item__title">Silver</span>
+										<span class="item__define">#cbcccd</span>
+									</div>
+									<div class="card--expand color--white bg-color--grey-dark">
+										<span class="item__title">Silver font</span>
+										<span class="item__define">#525252</span>
+									</div>
+									<div class="card--expand color--grey-dark bg-color--grey-light">
+										<span class="item__title">Silver bg</span>
+										<span class="item__define">#f0f0f0</span>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card--expand color--white bg-color--gold">
+										<span class="item__title">Gold</span>
+										<span class="item__define">#af8b1b</span>
+									</div>
+									<div class="card--expand color--white bg-color--gold-dark">
+										<span class="item__title">Gold font</span>
+										<span class="item__define">#46370b</span>
+									</div>
+									<div class="card--expand color--gold bg-color--gold-light">
+										<span class="item__title">Gold bg</span>
+										<span class="item__define">#f7f3e8</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h2>Category color</h2>
+							<p>Category colors are used for five categories of the platform.</p>
+							<div class="card-grid">
+								<div class="card color--white bg-color--brown">
+									<span class="item__title">Activity</span>
 									<span class="item__define">#914146</span>
 								</div>
-								<div class="card--expand color--siena bg-color--siena-light">
-									<span class="item__title">Beginner bg</span>
-									<span class="item__define">#fce4e0</span>
+								<div class="card color--white bg-color--emerald-dark">
+									<span class="item__title">Nutrition</span>
+									<span class="item__define">#027180</span>
+								</div>
+								<div class="card color--white bg-color--emerald">
+									<span class="item__title">Health</span>
+									<span class="item__define">#00aec6</span>
+								</div>
+								<div class="card color--white bg-color--pink">
+									<span class="item__title">Lifestyle</span>
+									<span class="item__define">#e196aa</span>
+								</div>
+								<div class="card color--white bg-color--yellow-dark">
+									<span class="item__title">Mindset</span>
+									<span class="item__define">#ffb922</span>
 								</div>
 							</div>
-							<div class="card">
-								<div class="card--expand color--white bg-color--bronze">
-									<span class="item__title">Bronze</span>
-									<span class="item__define">#9f916d</span>
+						</div>
+						<div>
+							<h2>UI color</h2>
+							<p>The main UI colors are used for action buttons, alert messages, and form elements. Input fields, for example, can get
+							positive and negative feedback.</p>
+							<div class="card-grid">
+								<div class="card color--white bg-color--green">
+									<span class="item__title">Success</span>
+									<span class="item__define">#8bc242</span>
 								</div>
-								<div class="card--expand color--white bg-color--bronze-dark">
-									<span class="item__title">Bronze font</span>
-									<span class="item__define">#3f3a2c</span>
-								</div>
-								<div class="card--expand color--white bg-color--bronze-light">
-									<span class="item__title">Bronze bg</span>
-									<span class="item__define">#979797</span>
+								<div class="card color--white bg-color--red">
+									<span class="item__title">Error</span>
+									<span class="item__define">#df1919</span>
 								</div>
 							</div>
-							<div class="card">
-								<div class="card--expand color--grey-dark bg-color--silver">
-									<span class="item__title">Silver</span>
-									<span class="item__define">#cbcccd</span>
-								</div>
-								<div class="card--expand color--white bg-color--grey-dark">
-									<span class="item__title">Silver font</span>
+						</div>
+						<div>
+							<h2>Greyscale</h2>
+							<p>Grey colors are used for text, backgrounds, lines and borders.</p>
+							<div class="card-grid">
+								<div class="card color--white bg-color--grey-dark">
+									<span class="item__title">Grey dark</span>
 									<span class="item__define">#525252</span>
 								</div>
-								<div class="card--expand color--grey-dark bg-color--grey-light">
-									<span class="item__title">Silver bg</span>
+								<div class="card color--white bg-color--grey">
+									<span class="item__title">Grey</span>
+									<span class="item__define">#606060</span>
+								</div>
+								<div class="card bg-color--grey-light">
+									<span class="item__title">Grey light</span>
 									<span class="item__define">#f0f0f0</span>
 								</div>
 							</div>
-							<div class="card">
-								<div class="card--expand color--white bg-color--gold">
-									<span class="item__title">Gold</span>
-									<span class="item__define">#af8b1b</span>
-								</div>
-								<div class="card--expand color--white bg-color--gold-dark">
-									<span class="item__title">Gold font</span>
-									<span class="item__define">#46370b</span>
-								</div>
-								<div class="card--expand color--gold bg-color--gold-light">
-									<span class="item__title">Gold bg</span>
-									<span class="item__define">#f7f3e8</span>
-								</div>
-							</div>
 						</div>
 					</section>
-					<section>
-						<h2>Category color</h2>
-						<p>Category colors are used for five categories of the platform.</p>
-						<div class="card-grid">
-							<div class="card color--white bg-color--brown">
-								<span class="item__title">Activity</span>
-								<span class="item__define">#914146</span>
-							</div>
-							<div class="card color--white bg-color--emerald-dark">
-								<span class="item__title">Nutrition</span>
-								<span class="item__define">#027180</span>
-							</div>
-							<div class="card color--white bg-color--emerald">
-								<span class="item__title">Health</span>
-								<span class="item__define">#00aec6</span>
-							</div>
-							<div class="card color--white bg-color--pink">
-								<span class="item__title">Lifestyle</span>
-								<span class="item__define">#e196aa</span>
-							</div>
-							<div class="card color--white bg-color--yellow-dark">
-								<span class="item__title">Mindset</span>
-								<span class="item__define">#ffb922</span>
-							</div>
+					<section id="color-token" class="section bg-color--emerald">
+					<!-- Table -->
+						<h2>Table</h2>
+						<h3>Default</h3>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
 						</div>
-					</section>
-					<section>
-						<h2>UI color</h2>
-						<p>The main UI colors are used for action buttons, alert messages, and form elements. Input fields, for example, can get
-						positive and negative feedback.</p>
-						<div class="card-grid">
-							<div class="card color--white bg-color--green">
-								<span class="item__title">Success</span>
-								<span class="item__define">#8bc242</span>
-							</div>
-							<div class="card color--white bg-color--red">
-								<span class="item__title">Error</span>
-								<span class="item__define">#df1919</span>
-							</div>
-						</div>
-					</section>
-					<section>
-						<h2>Greyscale</h2>
-						<p>Grey colors are used for text, backgrounds, lines and borders.</p>
-						<div class="card-grid">
-							<div class="card color--white bg-color--grey-dark">
-								<span class="item__title">Grey dark</span>
-								<span class="item__define">#525252</span>
-							</div>
-							<div class="card color--white bg-color--grey">
-								<span class="item__title">Grey</span>
-								<span class="item__define">#606060</span>
-							</div>
-							<div class="card bg-color--grey-light">
-								<span class="item__title">Grey light</span>
-								<span class="item__define">#f0f0f0</span>
-							</div>
+						<h3>Alternate</h3>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
 						</div>
 					</section>
 				</div>

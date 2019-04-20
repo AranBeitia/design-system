@@ -12,3 +12,42 @@
     line-height: 1.5;
   }
 }
+
+//title h1 white with text shadow
+.h1--white {
+  color: _color(white);
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+// Header backgroung image
+.header-bg {
+  padding:  20px;
+  min-height: 150px;
+  height: 150px;
+  background-color: _color(grey);
+  background-size: cover;
+
+  &#{&}__img {
+    &-color {
+      background-image: url(../../img/color.jpg);
+    }
+
+    &-layout {
+      background-image: url(../../img/layout.jpg);
+    }
+  }
+}
+
+//Sections
+.section {
+  padding: 0 80px;
+
+  @include breakpoint('<=small') {
+    padding: 0 40px;
+  }
+
+  @include breakpoint('<=xsmall') {
+    padding: 0 20px;
+  }
+}
+
