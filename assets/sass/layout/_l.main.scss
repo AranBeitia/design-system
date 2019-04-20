@@ -1,6 +1,5 @@
 .main {
   grid-area: main;
-  background-color: rgba(_color(blue-light), .1);
 
   .sidebar + & {
     margin-left: _size(sidebar-width);
@@ -36,6 +35,14 @@
   }
 
   &__content {
-    padding: 20px;
+    padding: 80px;
+
+    @include breakpoint('<=small') {
+      padding: 40px;
+    }
+
+    @include breakpoint('<=xsmall') {
+      padding: 20px;
+    }
   }
 }

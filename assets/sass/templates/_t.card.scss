@@ -1,7 +1,7 @@
 .card {
   @include vendor('display', 'flex');
   @include vendor('flex-direction', 'column');
-  justify-content: center;
+  @include vendor('justify-content', 'center');
   background-color: _color(white);
   border-radius: _size(border-radius);
 
