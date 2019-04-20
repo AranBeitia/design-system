@@ -19,8 +19,7 @@
     position: fixed;
     top: _size(header-height);
     width: 100%;
-    z-index: _misc(z-index-base);
-    transition: width 0.5s;
+    transition: width .5s;
   }
 
   &__content {

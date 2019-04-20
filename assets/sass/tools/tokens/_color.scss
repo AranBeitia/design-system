@@ -33,6 +33,11 @@ $colors: (
 	@return val($colors, $keys...);
 }
 
+//Misc
+$color-border:				rgba(_color(white), .35);
+$color-border-bg:	 		rgba(_color(white), .25);
+$color-border-hover:	rgba(_color(white), .5);
+
 // Construction of the classes and attributes
 @each $color-key, $color-value in $colors {
   .color--#{$color-key},
