@@ -23,9 +23,9 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
-		font-weight: _font(weight-bold);
+		font-weight: $font-bold;
 		height: calc(4.75em + 2px);
-		letter-spacing: _font(kerning-alt);
+		letter-spacing: $kerning;
 		line-height: 4.75em;
 		outline: 0;
 		padding: 0 3.75em;

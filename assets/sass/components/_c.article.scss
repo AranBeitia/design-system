@@ -1,14 +1,6 @@
-// Sections
-.section {
-  padding: 10px 80px 20px;
+// Articles
+.article {
 
-  @include breakpoint('<=small') {
-    padding: 10px 40px 20px;
-  }
-
-  @include breakpoint('<=xsmall') {
-    padding: 20px;
-  }
 }
 
 	// section, article {

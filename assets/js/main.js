@@ -11,11 +11,12 @@
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
+			xlarge:   [ '1201px',  '1680px' ],
+			large:    [ '981px',   '1200px' ],
 			medium:   [ '737px',   '980px'  ],
 			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ]
+			xsmall:   [ '321px',   '480px'  ],
+			xxsmall:	[	'null',			'320px']
 		});
 
 	// Hack: Enable IE flexbox workarounds.
@@ -179,7 +180,6 @@
 	var accordionsMenu = $('.accordion');
 
 	if( accordionsMenu.length > 0 ) {
-		
 		accordionsMenu.each(function(){
 			var accordion = $(this);
 			//detect change in the input[type="checkbox"] value

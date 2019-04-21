@@ -40,7 +40,7 @@
 							<li class="sb-nav__item"><a class="sb-nav__link" href="layout.html">Layout</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link active" href="colours.html">Colours</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="icons.html">Icons</a></li>
-							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Typography</a></li>
+							<li class="sb-nav__item"><a class="sb-nav__link" href="typography.html">Typography</a></li>
 							<li class="sb-nav__item"><a class="sb-nav__link" href="generic.html">Themes</a></li>
 						</ul>
 					</li>
@@ -66,18 +66,12 @@
 			<main class="main">
 				<div class="main__header">
 					<div class="[ header-bg header-bg__img-color ]">
-						<h1 class="h1--white">Color</h1>
+						<h1 class="major">Color</h1>
 					</div>
-					<nav class="menu-tab scroll-vertical">
-						<ul>
-							<li class="menu-tab__item"><a href="#palette" class="menu-tab__link active">Palette</a></li>
-							<li class="menu-tab__item"><a href="#color-token" class="menu-tab__link">Usage</a></li>
-						</ul>
-					</nav>
 				</div>
-				<div class="main__content">
-					<section id="palette" class="section">
-						<div>
+				<div class="[ main__content main__content--no-tab ]">
+					<section class="section">
+						<article>
 							<h2>Brand color</h2>
 							<p>Primary brand colors are used for elements that must reflect AXA's brand. Each color has a darker and a lighter
 							shade.</p>
@@ -113,8 +107,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div>
+						</article>
+						<article class="margin-top-2">
 							<h2>Level color</h2>
 							<p>Level colors are used for user's levels.</p>
 							<div class="[ card-grid card-grid--heightx3 ]">
@@ -175,8 +169,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div>
+						</article>
+						<article class="margin-top-2">
 							<h2>Category color</h2>
 							<p>Category colors are used for five categories of the platform.</p>
 							<div class="card-grid">
@@ -201,8 +195,8 @@
 									<span class="item__define">#ffb922</span>
 								</div>
 							</div>
-						</div>
-						<div>
+						</article>
+						<article class="margin-top-2">
 							<h2>UI color</h2>
 							<p>The main UI colors are used for action buttons, alert messages, and form elements. Input fields, for example, can get
 							positive and negative feedback.</p>
@@ -216,8 +210,8 @@
 									<span class="item__define">#df1919</span>
 								</div>
 							</div>
-						</div>
-						<div>
+						</article>
+						<article class="margin-top-2">
 							<h2>Greyscale</h2>
 							<p>Grey colors are used for text, backgrounds, lines and borders.</p>
 							<div class="card-grid">
@@ -234,54 +228,7 @@
 									<span class="item__define">#f0f0f0</span>
 								</div>
 							</div>
-						</div>
-					</section>
-					<section id="color-token" class="section bg-color--blue-light">
-						<h2>Brand color tokens</h2>
-
-						<div class="table-wrapper">
-							<table class="table alt">
-								<thead>
-									<tr>
-										<th>Token</th>
-										<th>Role</th>
-										<th>Value</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>$brand-color</td>
-										<td>AXA brand color siena (Easy Santé)</td>
-										<td><span class="card-tile bg-color--siena"></span></td>
-									</tr>
-									<tr>
-										<td>$brand-color-light</td>
-										<td>AXA brand color siena (Easy Santé)</td>
-										<td><span class="card-tile bg-color--siena-light"></span></td>
-									</tr>
-									<tr>
-										<td>$brand-color</td>
-										<td>AXA brand color</td>
-										<td><span class="card-tile bg-color--blue"></span></td>
-									</tr>
-									<tr>
-										<td>$brand-color-light</td>
-										<td>AXA brand color</td>
-										<td><span class="card-tile bg-color--blue-light"></span></td>
-									</tr>
-									<tr>
-										<td>$brand-color</td>
-										<td>AXA brand color (HOL)</td>
-										<td><span class="card-tile bg-color--yellow"></span></td>
-									</tr>
-									<tr>
-										<td>$brand-color-light</td>
-										<td>AXA brand color light (HOL)</td>
-										<td><span class="card-tile bg-color--hol-grey"></span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+						</article>
 					</section>
 				</div>
 			</main>

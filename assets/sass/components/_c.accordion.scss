@@ -14,7 +14,12 @@
   input[type=checkbox]+label.accordion__label {
     display: block;
     padding-left: 0;
-    
+    margin: $gutter2 $gutter;
+    color: _color(white);
+    font-size: $font-size-l;
+    text-transform: uppercase;
+    letter-spacing: $kerning;
+
     &:before {
       display: none;
     }

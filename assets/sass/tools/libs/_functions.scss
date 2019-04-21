@@ -32,7 +32,6 @@
 	}
 
 	@return $result;
-
 }
 
 /// Gets a value from a map.
@@ -51,7 +50,6 @@
 	}
 
 	@return $map;
-
 }
 
 /// Gets a duration value.
@@ -59,20 +57,6 @@
 /// @return {string} Value.
 @function _duration($keys...) {
 	@return val($duration, $keys...);
-}
-
-/// Gets a font value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _font($keys...) {
-	@return val($font, $keys...);
-}
-
-/// Gets a font size value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _f-size($keys...) {
-	@return val($f-size, $keys...);
 }
 
 /// Gets a misc value.

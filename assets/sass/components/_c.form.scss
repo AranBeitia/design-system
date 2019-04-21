@@ -70,11 +70,11 @@
 
 	label {
 		color: _color(white);
-		font-weight: _font(weight-bold);
+		font-weight: $font-bold;
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 0.35) 0;
 		display: block;
-		font-size: 1.1em;
+		font-size: $font-size-l;
 	}
 
 	input[type="text"],
@@ -160,8 +160,8 @@
 			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
-			font-weight: _font(weight);
+			font-size: $font-size-m;
+			font-weight: $font-medium;
 			padding-left: (_size(element-height) * 0.6) + 0.75rem;
 			padding-right: 0.75rem;
 			position: relative;

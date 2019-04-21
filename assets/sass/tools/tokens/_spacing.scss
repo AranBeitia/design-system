@@ -1,3 +1,4 @@
+// Top
 .margin-top-2,
 [margin-top-2] {
   margin-top: $gutter2;
@@ -26,4 +27,35 @@
 .padding-top-1_2,
 [padding-top-1_2] {
   padding-top: $gutter1_2;
+}
+
+// Bottom
+.margin-btm-2,
+[margin-btm-2] {
+  margin-bottom: $gutter2;
+}
+
+.margin-btm-3,
+[margin-btm-3] {
+  margin-bottom: $gutter3;
+}
+
+.margin-btm-1_2,
+[margin-btm-1_2] {
+  margin-bottom: $gutter1_2;
+}
+
+.padding-btm-2,
+[padding-btm-2] {
+  padding-bottom: $gutter2;
+}
+
+.padding-btm-3,
+[padding-btm-3] {
+  padding-bottom: $gutter3;
+}
+
+.padding-btm-1_2,
+[padding-btm-1_2] {
+  padding-bottom: $gutter1_2;
 }

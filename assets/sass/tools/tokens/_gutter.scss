@@ -20,6 +20,6 @@ $size: (
 	element-margin:		2em,
 	sidebar-width:		18rem,
 	sidebar-height:		3.5em,	// when <=large is active
-	header-height:		$gutter4,
+	header-height:		$gutter4 + $gutter2_3,
 	full-width:		100%
 );

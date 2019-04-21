@@ -9,7 +9,7 @@
   position: fixed;
   top: _size(header-height);
   width: _size(sidebar-width);
-  z-index: _misc(z-index-base);
+  z-index: $z-2;
   transition: width 0.5s;
 
   @include breakpoint('<=medium') {

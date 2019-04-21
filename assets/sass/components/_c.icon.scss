@@ -4,6 +4,22 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+.round-icon {
+	@include icon;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 2.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: _color(white);
+	border-radius: 100%;
+	
+	&:before {
+		font-size: 1.25em;
+		color: _color(blue);
+	}
+}
 /* Icon */
 
 	.icon {

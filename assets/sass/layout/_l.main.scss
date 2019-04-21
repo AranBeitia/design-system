@@ -20,9 +20,14 @@
     top: _size(header-height);
     width: 100%;
     transition: width .5s;
+    z-index: $z-1;
   }
 
   &__content {
     margin-top: 13rem;
+
+    &#{&}--no-tab {
+      margin-top: 10rem;
+    }
   }
 }

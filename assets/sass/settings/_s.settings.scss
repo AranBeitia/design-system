@@ -4,19 +4,13 @@
 .item {
   &__title {
     @include vendor('text-transform', 'uppercase');
-    font-weight: _font(weight-bold);
+    font-weight: $font-bold;
   }
 
   &__define {
-    font-size: _f-size(f-size-xl);
+    font-size: $font-size-xl;
     line-height: 1.5;
   }
-}
-
-//title h1 white with text shadow
-.h1--white {
-  color: _color(white);
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
 // Header backgroung image
@@ -39,19 +33,10 @@
 		&-icon {
       background-image: url(../../img/icon.jpg);
     }
-  }
-}
 
-//Sections
-.section {
-  padding: 10px 80px 20px;
-
-  @include breakpoint('<=small') {
-    padding: 10px 40px 20px;
-  }
-
-  @include breakpoint('<=xsmall') {
-    padding: 20px;
+    &-typo {
+      background-image: url(../../img/typography.jpg);
+    }
   }
 }
 
@@ -60,4 +45,11 @@
 	display: block;
 	width: 40px;
 	height: 40px;
+}
+
+//Image
+.img {
+  @include breakpoint ('<=small') {
+    width: _size(full-width);
+  }
 }

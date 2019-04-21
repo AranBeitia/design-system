@@ -1,8 +1,6 @@
 @import 'tools/libs/functions';
 @import 'tools/tokens/tokens';
 
-@import 'tools/libs/vars';
-
 @import 'tools/libs/mixins';
 @import 'tools/libs/vendor';
 @import 'tools/libs/breakpoints';
@@ -49,7 +47,7 @@
 	@import 'components/button/c.button';
 	@import 'components/button/c.button-burguer';
 	@import 'components/c.accordion';
-	@import 'components/c.features';
+	@import 'components/c.feature';
 	@import 'components/c.form';
 	@import 'components/c.icon';
 	@import 'components/c.image';
@@ -59,6 +57,7 @@
 	@import 'components/c.icons';
 	@import 'components/c.menu';
 	@import 'components/c.section';
+	@import 'components/c.article';
 	@import 'components/c.split';
 	@import 'components/c.spotlights';
 	@import 'components/c.table';
