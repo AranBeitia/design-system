@@ -1,16 +1,19 @@
 .sidebar {
+  position: fixed; // Access sidenav at any scroll position; relatively positioned on medium + screens
   grid-area: sidebar;
-  background: _color(blue);
-  cursor: default;
   height: calc(100vh-#{_size(header-height)});
-  left: 0;
+  width: _size(sidebar-width); // Will match grid area on medium + screens
   overflow-x: hidden;
   overflow-y: auto;
-  position: fixed;
+  background: _color(blue);
+  color: _color(white);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  cursor: default;
+  left: 0;
   top: _size(header-height);
-  width: _size(sidebar-width);
   z-index: $z-2;
-  transition: width 0.5s;
+  //transform: translateX(-245px);
+  transition: all .6s ease-in-out;
 
   @include breakpoint('<=medium') {
     width: 0;
@@ -25,5 +28,3 @@
     }
   }
 }
-
-
