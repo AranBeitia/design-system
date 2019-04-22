@@ -28,3 +28,12 @@
     }
   }
 }
+
+.sidebar {
+  body.is-preload & {
+    .sub-list__item {
+      @include vendor('transform', 'translateY(2em)');
+      opacity: 0;
+    }
+  }
+}
