@@ -4,8 +4,7 @@
 		margin-top: $gutter2;
 		margin-bottom: 0;
 		padding: 0;
-		padding-left: 2.5rem;
-		list-style-type: none;
+    list-style-type: none;
 	}
 
 	//menu tab
@@ -134,10 +133,10 @@
     display: block;
     font-size: $font-size-s;
     font-weight: $font-bold;
-    letter-spacing: $kerning;
+    letter-spacing: $kerning-1;
     line-height: 1.75;
     outline: 0;
-    padding: $gutter1_2 0;
+    padding: $gutter1_4 0;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
