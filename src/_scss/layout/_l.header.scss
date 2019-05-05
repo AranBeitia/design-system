@@ -1,0 +1,22 @@
+.header {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+	padding: 10px;
+	z-index: 2;
+  background-color: _color(white);
+	
+  @include breakpoint ('<=large'){
+    @include vendor('display', 'flex');
+    @include vendor('align-items', 'center');
+  }
+
+	&-brand {
+		font-size: $font-size-xxl;
+		line-height: 0;
+
+		&__logo {
+			width: 50px;
+		}
+	}
+}

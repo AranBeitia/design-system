@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Design system - layout</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="is-preload">
+    <div class="grid">
+      <header class="header">
+        <div class="btn-burguer">
+          <span class="btn-burguer__bar"></span>
+          <span class="btn-burguer__bar"></span>
+          <span class="btn-burguer__bar"></span>
+        </div>
+        <div class="header-brand">
+          <a href="index.html">
+            <img
+              class="header-brand__logo"
+              src="img/axa-logo.png"
+              alt="AXA brand logo"
+              title="Go to home"
+            />
+            <span>Design System</span>
+          </a>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <ul class="menu-sidebar">
+          <li>
+            <span class="nav-list__header">Getting start</span>
+            <ul class="sub-list sub-list--hidden">
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="#intro">About</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="#requirements">Requirements</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="#structure">Structure</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="nav-list__header">Guidelines</span>
+            <ul class="sub-list sub-list--hidden">
+              <li class="sub-list__item">
+                <a class="sub-list__link active" href="layout.html">Layout</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="colours.html">Colours</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="icons.html">Icons</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="typography.html">Typography</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Themes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="nav-list__header">Components</span>
+            <ul class="sub-list sub-list--hidden">
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="elements.html">Buttons</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="elements.html">Form</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="elements.html">Accordion</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Dropdown</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Switcher</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Loading</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Modal</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Notification</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Card tile</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html"
+                  >Progress indicator</a
+                >
+              </li>
+              <li class="sub-list__item">
+                <a class="sub-list__link" href="generic.html">Link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="main__header">
+          <div class="[ header-bg header-bg__img-layout ]">
+            <h1 class="major">Layout</h1>
+          </div>
+        </div>
+        <div class="main__content">
+          <section class="section">
+            <article>
+              <h2>Structure of a screen</h2>
+              <p>
+                A screen is the entire user interface (UI) of an application at
+                a given time. The app frame makes up the outer layer. Within
+                that are the page component and a layout component. The layout
+                component arranges containers like cards and banners in a way
+                that’s responsive across all screen sizes.
+              </p>
+              <h3>APP frame</h3>
+              <figure>
+                <img src="img/layout/app-layout.jpg" alt="app frame" />
+                <figcaption>
+                  The app frame is the outer UI of the application. It holds
+                  global features like top-level navigation and search.
+                </figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3>Layout dashboard</h3>
+              <figure>
+                <img src="img/layout/layout-dashboard.jpg" alt="" />
+                <figcaption>
+                  Layout for main dashboard in each section
+                </figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3>Layout detail</h3>
+              <figure>
+                <img src="img/layout/layout-detail.jpg" alt="" />
+                <figcaption>Layout for detail view in each section</figcaption>
+              </figure>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <p><span class="footer__copyright">&copy;</span> 2018 MTH</p>
+        <p>
+          Crafted with <i class="fas fa-heart footer__icon"></i> by
+          <a
+            href="https://www.linkedin.com/in/matt-holland/"
+            target="_blank"
+            class="footer__signature"
+            >Matt H</a
+          >
+        </p>
+      </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mymain.js"></script>
+  </body>
+</html>

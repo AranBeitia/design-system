@@ -34,3 +34,10 @@ $ gulp watch
 # URL details
 https://goede.site/setting-up-gulp-4-for-automatic-sass-compilation-and-css-injection
 
+
+# webpack
+
+```sh
+$ npm run build
+$ npm strat
+```
