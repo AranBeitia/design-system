@@ -1,10 +1,3 @@
-console.log(`I've been required by Webpack`);
-import style from "./_scss/main.scss";
-import "./js/jquery.min.js";
-import "./js/jquery.scrollex.min.js";
-import "./js/jquery.scrolly.min.js";
-import "./js/browser.min.js";
-import "./js/breakpoints.min.js";
 import "./js/main.js";
-import "./js/mymain.js";
-import "./js/util.js";
+
+import style from "./_scss/main.scss";
